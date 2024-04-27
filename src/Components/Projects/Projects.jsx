@@ -3,7 +3,6 @@ import { projects } from "../../projects.js";
 function Projects() {
   return (
     <div>
-      <h2>Here I'm gonna use gitHub API to get my projects</h2>
       {projects.map((project, i) => (
         <div className="project" key={i}>
           <h3>{project.name}</h3>

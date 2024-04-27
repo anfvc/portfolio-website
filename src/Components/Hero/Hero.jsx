@@ -1,7 +1,18 @@
+import { ReactTyped } from "react-typed";
+
 function Hero() {
   return (
-    <div className="text-3xl font-extrabold">
-      <h1>Hello! I'm Andrés a Full Stack Web Developer based in Germany.</h1>
+    <div className="w-full text-5xl font-extrabold">
+      <div className="flex gap-2">
+      <h1>Hello! I'm Andrés,</h1>
+        <h2>a dedicated</h2>
+        <ReactTyped
+          strings={["Frontend Developer", "Frontend Enthusiast"]}
+          typeSpeed={50}
+          backSpeed={80}
+          loop
+          ></ReactTyped>
+      </div>
     </div>
   );
 }
