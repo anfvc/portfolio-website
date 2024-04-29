@@ -18,6 +18,9 @@ function Hero() {
             loop
           ></ReactTyped>
         </div>
+        <div>
+          <p>I'm aspiring to become a passionate web developer!</p>
+        </div>
       </div>
     </section>
   );
