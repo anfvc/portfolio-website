@@ -11,14 +11,17 @@ function Header() {
           <h2>Andrés Villay</h2>
         </div>
         <ul className="flex items-center gap-8 text-3xl">
-          <a href="">
+          <a href="#" target="_self">
             <li>Home</li>
           </a>
-          <a href="">
-            <li>Contact</li>
-          </a>
-          <a href="">
+          <a href="#projects" target="_self">
             <li>Projects</li>
+          </a>
+          <a href="#about" target="_self">
+            <li>About</li>
+          </a>
+          <a href="#contact" target="_self">
+            <li>Contact</li>
           </a>
         </ul>
       </nav>
