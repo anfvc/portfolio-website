@@ -1,27 +1,45 @@
-import avatar from "../../assets/avatar.png"
+import avatar from "../../assets/avatar.png";
 
 function Header() {
   return (
     <header className="sticky top-0 w-full z-50 bg-white">
-      <nav className="flex justify-between items-center w-full mx-auto p-8">
+      <nav className="flex justify-between items-center w-full mx-auto p-8 border-b border-solid shadow-md border-gray-400">
         <div className="flex items-center gap-4 text-3xl font-bold">
           <div>
-            <a href="#"><img className="w-16 rounded-full" src={avatar} alt="avatar-img" /></a>
+            <a href="#">
+              <img
+                className="w-16 rounded-full"
+                src={avatar}
+                alt="avatar-img"
+              />
+            </a>
           </div>
           <h2>Andrés Villay</h2>
         </div>
-        <ul className="flex items-center gap-8 text-3xl">
-          <a href="#" target="_self">
-            <li>Home</li>
+        <ul className="flex items-center gap-8 text-3xl font-semibold">
+          <a className="relative inline-block" href="#" target="_self">
+            <li className="py-1 border-transparent hover:border-solid hover:border-black hover:border-b-4 transition-all duration-75">Home</li>
           </a>
-          <a href="#projects" target="_self">
-            <li>Projects</li>
+          <a
+            className="relative inline-block"
+            href="#projects"
+            target="_self"
+          >
+            <li className="py-1 border-transparent hover:border-solid hover:border-black hover:border-b-4 transition-all duration-75">Projects</li>
           </a>
-          <a href="#about" target="_self">
-            <li>About</li>
+          <a
+            className="relative inline-block"
+            href="#about"
+            target="_self"
+          >
+            <li className="py-1 border-transparent hover:border-solid hover:border-black hover:border-b-4 transition-all duration-75">About</li>
           </a>
-          <a href="#contact" target="_self">
-            <li>Contact</li>
+          <a
+            className="relative inline-block"
+            href="#contact"
+            target="_self"
+          >
+            <li className="py-1 border-transparent hover:border-solid hover:border-black hover:border-b-4 transition-all duration-75">Contact</li>
           </a>
         </ul>
       </nav>
