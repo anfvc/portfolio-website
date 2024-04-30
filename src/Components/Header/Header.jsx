@@ -2,7 +2,7 @@ import avatar from "../../assets/avatar.png"
 
 function Header() {
   return (
-    <header className="sticky top-0 border w-full border-black">
+    <header className="sticky top-0 w-full z-50 bg-white">
       <nav className="flex justify-between items-center w-full mx-auto p-8">
         <div className="flex items-center gap-4 text-3xl font-bold">
           <div>
