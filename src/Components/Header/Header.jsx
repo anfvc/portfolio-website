@@ -22,10 +22,10 @@ function Header() {
           </a>
           <a
             className="relative inline-block"
-            href="#stack"
+            href="#projects"
             target="_self"
           >
-            <li className="py-1 border-transparent hover:border-solid hover:border-black hover:border-b-4 transition-all duration-75">Stack</li>
+            <li className="py-1 border-transparent hover:border-solid hover:border-black hover:border-b-4 transition-all duration-75">Projects</li>
           </a>
           <a
             className="relative inline-block"

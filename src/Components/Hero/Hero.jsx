@@ -38,12 +38,12 @@ function Hero() {
                   Reach Out
                 </button>
               </a>
-              <a href="#projects">
+              <a href="#stack">
                 <button
                   className="inline-flex items-center rounded-full px-8 py-6 text-xl font-semibold text-black bg-white border-black hover:text-white border-2
               hover:bg-black transition ease-in-out delay-90 hover:-translate-y-1 duration-500 focus:bg-black focus:text-white"
                 >
-                  See my Projects
+                  Tech Stack
                 </button>
               </a>
             </div>
