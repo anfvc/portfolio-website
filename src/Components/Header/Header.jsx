@@ -3,7 +3,7 @@ import avatar from "../../assets/avatar.png";
 function Header() {
   return (
     <header className="sticky top-0 w-full z-50 bg-white">
-      <nav className="flex justify-between items-center w-full mx-auto p-8 border-b border-solid shadow-md border-gray-400">
+      <nav className="flex justify-between items-center w-full mx-auto p-8 border-b border-solid shadow-sm">
         <div className="flex items-center gap-4 text-3xl font-bold">
           <div>
             <a href="#">
@@ -22,10 +22,10 @@ function Header() {
           </a>
           <a
             className="relative inline-block"
-            href="#projects"
+            href="#stack"
             target="_self"
           >
-            <li className="py-1 border-transparent hover:border-solid hover:border-black hover:border-b-4 transition-all duration-75">Projects</li>
+            <li className="py-1 border-transparent hover:border-solid hover:border-black hover:border-b-4 transition-all duration-75">Stack</li>
           </a>
           <a
             className="relative inline-block"

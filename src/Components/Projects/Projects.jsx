@@ -3,7 +3,10 @@ import { projects } from "../../projects.js";
 function Projects() {
   return (
     <section id="projects" className="w-full">
-      <div>
+      <div className="w-full mx-auto">
+        <div className="w-full flex justify-center mx-auto">
+          <h2 className="font-bold text-5xl">Projects</h2>
+        </div>
         {projects.map((project, i) => (
           <div className="project" key={i}>
             <h3>{project.name}</h3>

@@ -1,8 +1,15 @@
-import html from "../../assets/html.svg"
+import css from "../../assets/css.svg";
+import html from "../../assets/html.svg";
 
-export const technologies = [
+const technologies = [
   {
     name: "HTML",
-    image: html
-  }
-]
+    image: html,
+  },
+  {
+    name: "CSS",
+    image: css,
+  },
+];
+
+export default technologies;
