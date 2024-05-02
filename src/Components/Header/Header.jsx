@@ -1,6 +1,15 @@
+import { useState } from "react";
 import avatar from "../../assets/avatar.png";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoCloseSharp } from "react-icons/io5";
 
 function Header() {
+  const [open, setOpen] = useState(false);
+
+  function handleNav() {
+    setOpen(!open);
+  }
+
   return (
     <header className="sticky top-0 w-full z-50 bg-white">
       <nav className="flex justify-between items-center w-full mx-auto p-8 border-b border-solid shadow-sm">
@@ -16,32 +25,32 @@ function Header() {
           </div>
           <h2>Andrés Villay</h2>
         </div>
-        <ul className="flex items-center gap-8 text-3xl font-semibold">
+        <ul className="items-center hidden gap-8 text-3xl font-semibold md:flex">
           <a className="relative inline-block" href="#" target="_self">
-            <li className="py-1 border-transparent hover:border-solid hover:border-black hover:border-b-4 transition-all duration-75">Home</li>
+            <li className="py-1 border-transparent hover:border-solid hover:border-black hover:border-b-4 transition-all duration-75">
+              Home
+            </li>
           </a>
-          <a
-            className="relative inline-block"
-            href="#projects"
-            target="_self"
-          >
-            <li className="py-1 border-transparent hover:border-solid hover:border-black hover:border-b-4 transition-all duration-75">Projects</li>
+          <a className="relative inline-block" href="#projects" target="_self">
+            <li className="py-1 border-transparent hover:border-solid hover:border-black hover:border-b-4 transition-all duration-75">
+              Projects
+            </li>
           </a>
-          <a
-            className="relative inline-block"
-            href="#about"
-            target="_self"
-          >
-            <li className="py-1 border-transparent hover:border-solid hover:border-black hover:border-b-4 transition-all duration-75">About</li>
+          <a className="relative inline-block" href="#about" target="_self">
+            <li className="py-1 border-transparent hover:border-solid hover:border-black hover:border-b-4 transition-all duration-75">
+              About
+            </li>
           </a>
-          <a
-            className="relative inline-block"
-            href="#contact"
-            target="_self"
-          >
-            <li className="py-1 border-transparent hover:border-solid hover:border-black hover:border-b-4 transition-all duration-75">Contact</li>
+          <a className="relative inline-block" href="#contact" target="_self">
+            <li className="py-1 border-transparent hover:border-solid hover:border-black hover:border-b-4 transition-all duration-75">
+              Contact
+            </li>
           </a>
+
         </ul>
+        <div className="block text-5xl md:hidden" onClick={handleNav}>
+            {open ? <GiHamburgerMenu /> : <IoCloseSharp />}
+          </div>
       </nav>
     </header>
   );

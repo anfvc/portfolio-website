@@ -5,13 +5,13 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 function Hero() {
   return (
     <section id="home" className="w-full pb-20">
-      <div className="flex w-full text-5xl gap-16">
-        <div className="w-full flex justify-center px-20 gap-2 pb-20">
+      <div className="flex flex-col w-full text-5xl gap-10 lg:flex-row">
+        <div className="w-full flex justify-center py-32 px-14 pb-10 gap-4">
           <div className="flex flex-col justify-center gap-12">
-            <h1 className="font-extrabold text-8xl">Hi there, I'm Andrés</h1>
-            <div className="flex font-extrabold py-2">
-              <h2 className="font-extrabold pr-2.5">An integral</h2>
-              <ReactTyped
+            <h1 className="font-extrabold text-5xl md:text-8xl">Hi there, I'm Andrés</h1>
+            <div className="flex flex-col font-extrabold py- lg:flex-row">
+              <h2 className="font-extrabold text-4xl pr-2.5 md:text-6xl">An integral</h2>
+              <ReactTyped className="text-4xl md:text-6xl"
                 strings={[
                   "Web Developer.",
                   "Frontend Developer.",
@@ -29,10 +29,10 @@ function Hero() {
               impactful products and experiences for end-users, I'm always eager
               to continue growing professionally and advance as a developer.
             </p>
-            <div className="w-full flex gap-8">
+            <div className="w-full flex gap-6">
               <a href="mailto:andresvillay2@gmail.com">
                 <button
-                  className="inline-flex items-center rounded-full px-8 py-6 text-xl font-semibold text-white bg-black border-black hover:text-black border-2
+                  className="inline-flex items-center rounded-full px-4 py-2 md:px-8 md:py-5 text-xl font-semibold text-white bg-black border-black hover:text-black border-2
               hover:bg-white transition ease-in-out delay-90 hover:-translate-y-1 duration-500 focus:bg-white focus:text-black"
                 >
                   Reach Out
@@ -40,14 +40,14 @@ function Hero() {
               </a>
               <a href="#stack">
                 <button
-                  className="inline-flex items-center rounded-full px-8 py-6 text-xl font-semibold text-black bg-white border-black hover:text-white border-2
+                  className="inline-flex items-center rounded-full px-4 py-2 md:px-8 md:py-5 text-xl font-semibold text-black bg-white border-black hover:text-white border-2
               hover:bg-black transition ease-in-out delay-90 hover:-translate-y-1 duration-500 focus:bg-black focus:text-white"
                 >
                   Tech Stack
                 </button>
               </a>
             </div>
-            <div className="w-full flex items-center pt-16 gap-8">
+            <div className="w-full flex items-center justify-center pt-16 gap-8 md:justify-start lg:justify-start">
               <a
                 className="text-5xl p-4 rounded-full bg-white hover:bg-[#f0f0f0] transition-all ease-linear"
                 href="https://github.com/anfvc"
@@ -65,7 +65,7 @@ function Hero() {
             </div>
           </div>
         </div>
-        <div className="w-full flex justify-center items-center object-cover">
+        <div className="w-full h-full flex justify-center items-center object-cover">
           <img className="w-full" src={profile3} alt="" />
         </div>
       </div>
