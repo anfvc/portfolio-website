@@ -4,10 +4,10 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseSharp } from "react-icons/io5";
 
 function Header() {
-  const [open, setOpen] = useState(false);
+  const [hamburger, setHamburger] = useState(false);
 
   function handleNav() {
-    setOpen(!open);
+    setHamburger(!hamburger);
   }
 
   return (
@@ -49,7 +49,7 @@ function Header() {
 
         </ul>
         <div className="block text-5xl md:hidden" onClick={handleNav}>
-            {open ? <GiHamburgerMenu /> : <IoCloseSharp />}
+            {hamburger ? <GiHamburgerMenu /> : <IoCloseSharp />}
           </div>
       </nav>
     </header>
