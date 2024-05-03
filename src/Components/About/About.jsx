@@ -1,12 +1,12 @@
 function About() {
   return (
-    <section id="about" className="w-full">
-      <div className="w-full flex flex-col">
+    <section id="about" className="w-full flex justify-center py-20">
+      <div className="w-full flex flex-col gap-10 px-5 md:px-20">
         <div className="flex justify-center">
           <h2 className="font-bold text-5xl">About</h2>
         </div>
-        <div className="w-full flex flex-col md:flex-row">
-          <div className="w-full flex flex-col">
+        <div className="w-full flex flex-col justify-center md:flex-row">
+          <div className="w-full flex flex-col text-justify">
             <p>
               I hold a degree in International Business and have a strong
               passion for Web Development. Originally from Colombia, I relocated

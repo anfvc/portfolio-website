@@ -22,7 +22,7 @@ function Hero() {
                 loop
               ></ReactTyped>
             </div>
-            <p className="text-3xl text-justify">
+            <p className="text-3xl md:text-4xl text-justify">
               I'm a tech enthusiast making a transition into the Web Development
               industry. Aiming to become the best developer I can be, I have a
               keen interest in bringing innovative ideas to life and crafting
