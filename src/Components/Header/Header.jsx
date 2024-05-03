@@ -31,14 +31,14 @@ function Header() {
               Home
             </li>
           </a>
-          <a className="relative inline-block" href="#projects" target="_self">
-            <li className="py-1 border-transparent hover:border-solid hover:border-black hover:border-b-4 transition-all duration-75">
-              Projects
-            </li>
-          </a>
           <a className="relative inline-block" href="#about" target="_self">
             <li className="py-1 border-transparent hover:border-solid hover:border-black hover:border-b-4 transition-all duration-75">
               About
+            </li>
+          </a>
+          <a className="relative inline-block" href="#projects" target="_self">
+            <li className="py-1 border-transparent hover:border-solid hover:border-black hover:border-b-4 transition-all duration-75">
+              Projects
             </li>
           </a>
           <a className="relative inline-block" href="#contact" target="_self">

@@ -4,14 +4,14 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Hero() {
   return (
-    <section id="home" className="w-full pb-20">
-      <div className="flex flex-col w-full text-5xl gap-10 lg:flex-row">
-        <div className="w-full flex justify-center py-32 px-14 pb-10 gap-4">
+    <section id="home" className="w-full bg-[#f5f5f5]">
+      <div className="flex gap-5 flex-col mb-20 w-full text-5xl lg:gap-10 lg:flex-row">
+        <div className="w-full flex justify-center py-32 px-14 pb-10">
           <div className="flex flex-col justify-center gap-12">
-            <h1 className="font-extrabold text-5xl md:text-8xl">Hi there, I'm Andrés</h1>
-            <div className="flex flex-col font-extrabold py- lg:flex-row">
-              <h2 className="font-extrabold text-4xl pr-2.5 md:text-6xl">An integral</h2>
-              <ReactTyped className="text-4xl md:text-6xl"
+            <h1 className="font-extrabold text-4xl md:text-6xl lg:text-7xl">Hi there, I'm Andrés</h1>
+            <div className="flex flex-col font-extrabold md:flex-row">
+              <h2 className="font-extrabold text-4xl pr-2.5 md:text-4xl xl:text-5xl">An integral</h2>
+              <ReactTyped className="text-4xl md:text-4xl xl:text-5xl"
                 strings={[
                   "Web Developer.",
                   "Frontend Developer.",
