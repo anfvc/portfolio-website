@@ -1,18 +1,18 @@
 import { useState } from "react";
 import avatar from "../../assets/avatar.png";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { IoCloseSharp } from "react-icons/io5";
+import { AiOutlineClose } from "react-icons/ai";
 
 function Header() {
   const [hamburger, setHamburger] = useState(false);
 
-  function handleNav() {
+  function handleMenu() {
     setHamburger(!hamburger);
   }
 
   return (
-    <header className="sticky top-0 w-full z-50 bg-white">
-      <nav className="flex justify-between items-center w-full mx-auto p-8 border-b border-solid shadow-sm">
+    <header className="sticky top-0 w-full z-50 bg-white shadow-sm">
+      <nav className="flex justify-between items-center w-full mx-auto max-w-screen-2xl p-8 border-solid">
         <div className="flex items-center gap-4 text-3xl font-bold">
           <div>
             <a href="#">
@@ -27,7 +27,7 @@ function Header() {
         </div>
         <ul className="items-center hidden gap-8 text-3xl font-semibold md:flex">
           <a className="relative inline-block" href="#" target="_self">
-            <li className="py-1 border-transparent hover:border-solid hover:border-black hover:border-b-4 transition-all duration-75">
+            <li className="py-1 border-transparent hover:border-solid hover:border-black hover:border-b-4 transition-all duration-75 ">
               Home
             </li>
           </a>
@@ -46,11 +46,41 @@ function Header() {
               Contact
             </li>
           </a>
-
         </ul>
-        <div className="block text-5xl md:hidden" onClick={handleNav}>
-            {hamburger ? <GiHamburgerMenu /> : <IoCloseSharp />}
-          </div>
+        <div className="block text-5xl md:hidden" onClick={handleMenu}>
+          {hamburger ? (
+            <AiOutlineClose className="text-6xl" />
+          ) : (
+            <GiHamburgerMenu />
+          )}
+        </div>
+        <div
+          className={
+            hamburger
+              ? "absolute left-0 right-0 bg-black top-[100%] opacity-100 w-screen py-1 ease-in-out duration-500"
+              : "absolute top-[100%] left-[-100%] right-[100%] opacity-0 ease-in-out duration-500"
+          }
+        >
+          <ul className="flex flex-col justify-center gap-14 font-semibold px-10 py-16 text-white h-full">
+            <a className="snap-normal" href="#" target="_self" onClick={handleMenu}>
+              <li className="">Home</li>
+            </a>
+            <a className="" href="#about" target="_self" onClick={handleMenu}>
+              <li className="">About</li>
+            </a>
+            <a
+              className=""
+              href="#projects"
+              target="_self"
+              onClick={handleMenu}
+            >
+              <li className="">Projects</li>
+            </a>
+            <a className="" href="#contact" target="_self" onClick={handleMenu}>
+              <li className="">Contact</li>
+            </a>
+          </ul>
+        </div>
       </nav>
     </header>
   );

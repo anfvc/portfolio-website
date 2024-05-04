@@ -23,7 +23,7 @@ export const projects = [
       "This is an online shop website I built called The React Shop. In this project I wanted to apply different concepts from React as well as some of its libraries such as react router dom. The goal was to recreate an online shop experience, from adding products to a wishlist to successfully making a purchase.",
     link: "https://spa-project-zd1l.onrender.com/",
     image: "",
-    techUsed: ["React", "React Router Dom", "JavaScript", "CSS"],
+    techUsed: ["React", "React Router Dom", "JavaScript", "CSS", "Fetch API"],
     github: "https://github.com/anfvc/spa-project.git",
   },
 ];
