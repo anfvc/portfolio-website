@@ -3,14 +3,11 @@ import { useState } from "react";
 
 function Projects() {
   const [isHovering, setIsHovering] = useState(-1);
+  const [cursor, setCursor] = useState({ x: 0, y: 0 });
 
-  // function handleMouseEnter(e) {
-  //   setIsHovering(true);
-  // }
-
-  // function handleMouseLeave(e) {
-  //   setIsHovering(false);
-  // }
+  function handleMouseMove(e) {
+    setCursor({ x: e.clientX, y: e.clientY });
+  }
 
   return (
     <section id="projects" className="w-full py-24 scroll-mt-20">
@@ -18,10 +15,10 @@ function Projects() {
         <div className="w-full flex justify-center mx-auto">
           <h2 className="font-bold text-5xl">Projects</h2>
         </div>
-        <div className="w-full flex flex-col justify-center gap-8">
+        <div className="w-full flex flex-col justify-center gap-8" onMouseMove={handleMouseMove}>
           {projects.map((project, i) => (
             <div
-              className="w-full flex flex-col gap-4 border-x-none border-y border-t-0 first:border-t border-black py-10 text-justify"
+              className="w-full relative flex flex-col gap-4 border-x-none border-y border-t-0 first:border-t border-black py-10 text-justify"
               key={i}
               onMouseEnter={() => setIsHovering(i)}
               onMouseLeave={() => setIsHovering(-1)}
@@ -34,16 +31,16 @@ function Projects() {
                   {project.techUsed.join(", ")}.
                 </span>
               </p>
-              {isHovering === i ? ( //I have to the same but with an <img>
-                <a
-                  className="text-blue-700 block"
-                  href={project.link}
-                  target="_blank"
-                >
-                  {" "}
-                  {/* Need to remove link color late */}
-                  Link to the Project
-                </a>
+              <a href={project.link}>
+                <p>Demo</p>
+              </a>
+              {isHovering === i ? (
+                <img
+                  className="object-cover w-1/5 absolute transition-all duration-200"
+                  src={project.image}
+                  alt={project.name}
+                  style={{ left: `${cursor.x}px`, top: `${50}px`, right: `${cursor.x}` }}
+                />
               ) : (
                 ""
               )}
