@@ -11,7 +11,7 @@ function Header() {
   }
 
   return (
-    <header className="sticky top-0 w-full z-50 bg-white shadow-sm">
+    <header className="sticky top-0 w-full z-50 bg-white shadow-md">
       <nav className="flex justify-between items-center w-full mx-auto max-w-screen-2xl p-8 border-solid">
         <div className="flex items-center gap-4 text-3xl font-bold">
           <div>
@@ -62,7 +62,12 @@ function Header() {
           }
         >
           <ul className="flex flex-col justify-center gap-14 font-semibold px-10 py-16 text-white h-full">
-            <a className="snap-normal" href="#" target="_self" onClick={handleMenu}>
+            <a
+              className="snap-normal"
+              href="#"
+              target="_self"
+              onClick={handleMenu}
+            >
               <li className="">Home</li>
             </a>
             <a className="" href="#about" target="_self" onClick={handleMenu}>
