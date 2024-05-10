@@ -14,7 +14,7 @@ function Header({ mode, handleChange }) {
   return (
     <header
       className={`sticky top-0 w-full z-50 shadow-md ${
-        mode ? "bg-black" : "bg-white"
+        mode ? "dark" : "bg-white"
       }`}
     >
       <nav className="flex justify-between items-center w-full mx-auto max-w-screen-2xl p-8 border-solid">
