@@ -2,8 +2,9 @@ import { useState } from "react";
 import avatar from "../../assets/avatar.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
+import { Switch } from "@mui/material";
 
-function Header() {
+function Header({ mode, handleChange }) {
   const [hamburger, setHamburger] = useState(false);
 
   function handleMenu() {
@@ -11,7 +12,11 @@ function Header() {
   }
 
   return (
-    <header className="sticky top-0 w-full z-50 bg-white shadow-md">
+    <header
+      className={`sticky top-0 w-full z-50 shadow-md ${
+        mode ? "bg-black" : "bg-white"
+      }`}
+    >
       <nav className="flex justify-between items-center w-full mx-auto max-w-screen-2xl p-8 border-solid">
         <div className="flex items-center gap-4 text-3xl font-bold">
           <div>
@@ -24,6 +29,12 @@ function Header() {
             </a>
           </div>
           <h2>Andrés Villay</h2>
+          <Switch
+            checked={mode}
+            onChange={handleChange}
+            inputProps={{ "aria-label": "controlled" }}
+            size="small"
+          />
         </div>
         <ul className="items-center hidden gap-8 text-3xl font-semibold md:flex">
           <a className="relative inline-block" href="#" target="_self">
