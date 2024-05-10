@@ -2,9 +2,12 @@ import { ReactTyped } from "react-typed";
 import profile3 from "../../assets/profile3.png";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
-function Hero() {
+function Hero({ mode }) {
   return (
-    <section id="home" className="w-full bg-[#f5f5f5]">
+    <section
+      id="home"
+      className={`w-full ${mode ? "bg-[#121212]" : " bg-[#f5f5f5]"} `}
+    >
       <div className="flex gap-5 flex-col mb-20 w-full text-5xl mx-auto max-w-screen-2xl lg:gap-10 lg:flex-row">
         <div className="w-full flex justify-center py-32 px-14 pb-10">
           <div className="flex flex-col justify-center gap-12">
@@ -22,7 +25,7 @@ function Hero() {
                   "Frontend Developer.",
                   "Professional.",
                 ]}
-                typeSpeed={100}
+                typeSpeed={80}
                 backSpeed={70}
                 loop
               ></ReactTyped>
@@ -54,14 +57,22 @@ function Hero() {
             </div>
             <div className="w-full flex items-center justify-center pt-16 gap-8 md:justify-start lg:justify-start">
               <a
-                className="text-5xl p-4 rounded-full bg-white hover:bg-[#f0f0f0] transition-all ease-linear"
+                className={`text-5xl p-4 rounded-full ${
+                  mode
+                    ? "bg-black hover:bg-[#f0f0f0] hover:text-[#121212]"
+                    : "bg-white hover:bg-[#121212] hover:text-[#f0f0f0]"
+                } transition-all ease-linear`}
                 href="https://github.com/anfvc"
                 target="_blank"
               >
                 <FaGithub />
               </a>
               <a
-                className="text-5xl p-4 rounded-full bg-white hover:bg-[#f0f0f0] transition-all ease-linear"
+                className={`text-5xl p-4 rounded-full ${
+                  mode
+                    ? "bg-black hover:bg-[#f0f0f0] hover:text-[#121212]"
+                    : "bg-white hover:bg-[#121212] hover:text-[#f0f0f0]"
+                } transition-all ease-linear`}
                 href="https://linkedin.com/in/avillay"
                 target="_blank"
               >

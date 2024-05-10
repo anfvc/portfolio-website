@@ -13,8 +13,8 @@ function Header({ mode, handleChange }) {
 
   return (
     <header
-      className={`sticky top-0 w-full z-50 shadow-md ${
-        mode ? "dark" : "bg-white"
+      className={`sticky top-0 w-full z-50  ${
+        mode ? "bg-[#121212] shadow-zinc-900 shadow-md" : "bg-[#fff] shadow-md"
       }`}
     >
       <nav className="flex justify-between items-center w-full mx-auto max-w-screen-2xl p-8 border-solid">

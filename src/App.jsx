@@ -9,9 +9,11 @@ import Footer from "./Components/Footer/Footer";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { Paper } from "@mui/material";
 import { useState } from "react";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 function App() {
-  const [mode, setMode] = useState(false);
+  const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
+  const [mode, setMode] = useState(prefersDarkMode);
 
   const appTheme = createTheme({
     palette: {
@@ -30,10 +32,10 @@ function App() {
         <Paper elevation={0} square>
           <Header mode={mode} handleChange={handleChange} />
           <main className="w-full">
-            <Hero />
+            <Hero mode={mode} />
             <Tech />
-            <About />
-            <Projects />
+            <About mode={mode} />
+            <Projects mode={mode} />
             <Contact />
           </main>
           <Footer />

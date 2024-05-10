@@ -1,10 +1,10 @@
-import about from "../../assets/about.png";
+import about2 from "../../assets/about2.jpg";
 
-function About() {
+function About({ mode }) {
   return (
     <section
       id="about"
-      className="w-full flex justify-center py-20 scroll-mt-20 bg-[#f5f5f5]"
+      className={`w-full flex justify-center py-20 scroll-mt-20 ${mode ? "bg-[#121212]" : " bg-[#f5f5f5]"}`}
     >
       <div className="w-full flex flex-col gap-16 px-10 py-16 md:px-20 mx-auto max-w-screen-2xl">
         <div className="flex justify-center">
@@ -13,7 +13,7 @@ function About() {
         <div className="w-full flex flex-col items-center gap-16 lg:flex-row lg:justiy-center lg:gap-12">
           <div className="w-full h-full flex justify-center">
             <img
-              src={about}
+              src={about2}
               className="w-5/5 md:w-8/8 lg:w-full rounded-2xl object-cover"
               alt="about-picture"
             />
