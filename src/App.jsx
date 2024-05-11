@@ -29,7 +29,7 @@ function App() {
   return (
     <>
       <ThemeProvider theme={appTheme}>
-        <Paper elevation={0} square>
+        <Paper elevation={0} square sx={{width: "100vw"}}>
           <Header mode={mode} handleChange={handleChange} />
           <main className="w-full">
             <Hero mode={mode} />
