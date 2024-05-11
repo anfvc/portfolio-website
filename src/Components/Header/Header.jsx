@@ -34,26 +34,37 @@ function Header({ mode, handleChange }) {
             onChange={handleChange}
             inputProps={{ "aria-label": "controlled" }}
             size="small"
+            color="default"
           />
         </div>
         <ul className="items-center hidden gap-8 text-3xl font-semibold md:flex">
           <a className="relative inline-block" href="#" target="_self">
-            <li className="py-1 border-transparent hover:border-solid hover:border-black hover:border-b-4 transition-all duration-75 ">
+            <li
+              className={`py-1 border-transparent hover:border-solid ${
+                mode ? "hover:border-[#f5f5f5]" : "hover:border-[#151515]"
+              } hover:border-b-4 transition-all duration-75`}
+            >
               Home
             </li>
           </a>
           <a className="relative inline-block" href="#about" target="_self">
-            <li className="py-1 border-transparent hover:border-solid hover:border-black hover:border-b-4 transition-all duration-75">
+            <li className={`py-1 border-transparent hover:border-solid ${
+                mode ? "hover:border-[#f5f5f5]" : "hover:border-[#151515]"
+              } hover:border-b-4 transition-all duration-75`}>
               About
             </li>
           </a>
           <a className="relative inline-block" href="#projects" target="_self">
-            <li className="py-1 border-transparent hover:border-solid hover:border-black hover:border-b-4 transition-all duration-75">
+            <li className={`py-1 border-transparent hover:border-solid ${
+                mode ? "hover:border-[#f5f5f5]" : "hover:border-[#151515]"
+              } hover:border-b-4 transition-all duration-75`}>
               Projects
             </li>
           </a>
           <a className="relative inline-block" href="#contact" target="_self">
-            <li className="py-1 border-transparent hover:border-solid hover:border-black hover:border-b-4 transition-all duration-75">
+            <li className={`py-1 border-transparent hover:border-solid ${
+                mode ? "hover:border-[#f5f5f5]" : "hover:border-[#151515]"
+              } hover:border-b-4 transition-all duration-75`}>
               Contact
             </li>
           </a>
@@ -72,28 +83,38 @@ function Header({ mode, handleChange }) {
               : "absolute top-[100%] left-[-100%] right-[100%] opacity-0 ease-in-out duration-500"
           }
         >
-          <ul className="flex flex-col justify-center gap-14 font-semibold px-10 py-16 text-white h-full">
+          <ul className="flex flex-col justify-center gap-6 font-semibold px-10 py-20 text-white h-full">
             <a
-              className="snap-normal"
+              className="py-10 border-b border-[#f5f5f5]"
               href="#"
               target="_self"
               onClick={handleMenu}
             >
-              <li className="">Home</li>
-            </a>
-            <a className="" href="#about" target="_self" onClick={handleMenu}>
-              <li className="">About</li>
+              <li>Home</li>
             </a>
             <a
-              className=""
+              className="py-10 border-b border-[#f5f5f5]"
+              href="#about"
+              target="_self"
+              onClick={handleMenu}
+            >
+              <li>About</li>
+            </a>
+            <a
+              className="py-10 border-b border-[#f5f5f5]"
               href="#projects"
               target="_self"
               onClick={handleMenu}
             >
-              <li className="">Projects</li>
+              <li>Projects</li>
             </a>
-            <a className="" href="#contact" target="_self" onClick={handleMenu}>
-              <li className="">Contact</li>
+            <a
+              className="py-10 border-b border-[#f5f5f5]"
+              href="#contact"
+              target="_self"
+              onClick={handleMenu}
+            >
+              <li>Contact</li>
             </a>
           </ul>
         </div>

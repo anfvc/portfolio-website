@@ -6,7 +6,7 @@ function Hero({ mode }) {
   return (
     <section
       id="home"
-      className={`w-full ${mode ? "bg-[#121212]" : " bg-[#f5f5f5]"} `}
+      className={`w-full ${mode ? "bg-[#151515]" : " bg-[#f5f5f5]"} `}
     >
       <div className="flex gap-5 flex-col mb-20 w-full text-5xl mx-auto max-w-screen-2xl lg:gap-10 lg:flex-row">
         <div className="w-full flex justify-center py-32 px-14 pb-10">

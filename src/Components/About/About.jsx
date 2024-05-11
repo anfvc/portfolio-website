@@ -4,7 +4,7 @@ function About({ mode }) {
   return (
     <section
       id="about"
-      className={`w-full flex justify-center py-20 scroll-mt-20 ${mode ? "bg-[#121212]" : " bg-[#f5f5f5]"}`}
+      className={`w-full flex justify-center py-20 scroll-mt-20 ${mode ? "bg-[#151515]" : " bg-[#f5f5f5]"}`}
     >
       <div className="w-full flex flex-col gap-16 px-10 py-16 md:px-20 mx-auto max-w-screen-2xl">
         <div className="flex justify-center">

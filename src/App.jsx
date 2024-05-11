@@ -36,7 +36,7 @@ function App() {
             <Tech />
             <About mode={mode} />
             <Projects mode={mode} />
-            <Contact />
+            <Contact mode={mode} />
           </main>
           <Footer />
         </Paper>

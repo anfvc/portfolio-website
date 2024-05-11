@@ -1,7 +1,7 @@
 
 function Footer() {
   return (
-    <div className="bg-black">Footer</div>
+    <div className="w-full sticky">Footer</div>
   )
 }
 
