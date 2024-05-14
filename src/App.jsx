@@ -38,7 +38,7 @@ function App() {
             <Projects mode={mode} />
             <Contact mode={mode} />
           </main>
-          <Footer />
+          <Footer mode={mode} />
         </Paper>
       </ThemeProvider>
     </>
