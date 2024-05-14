@@ -5,7 +5,7 @@ function Footer({ mode }) {
   return (
     <footer className="w-full px-5 md:px-20 ">
       <div className="w-full gap-5 flex flex-col items-center border-t md:flex-row md:justify-between md:items-center sticky pt-20 pb-10 mx-auto max-w-screen-2xl">
-        <div className="w-full flex items-center justify-center gap-8 md:justify-start px-5">
+        <div className="w-full flex items-center justify-center gap-2 md:justify-start px-5">
           <a
             className={`text-5xl p-4 rounded-full ${
               mode
@@ -30,7 +30,7 @@ function Footer({ mode }) {
           </a>
         </div>
         <div className="w-full flex justify-center">
-          Developed by Andrés Villay
+          Developed by Andrés Villay &copy; {new Date().getFullYear()}
         </div>
         <div className="w-full flex flex-col items-center  md:flex-row md:justify-end px-5">
           <a href="#">
