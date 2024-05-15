@@ -1,8 +1,8 @@
 import { useState } from "react";
-import avatar from "../../assets/avatar.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import { Switch } from "@mui/material";
+import Andres from "../../assets/Andres.png";
 
 function Header({ mode, handleChange }) {
   const [hamburger, setHamburger] = useState(false);
@@ -23,7 +23,7 @@ function Header({ mode, handleChange }) {
             <a href="#">
               <img
                 className="w-16 rounded-full"
-                src={avatar}
+                src={Andres}
                 alt="avatar-img"
               />
             </a>
@@ -48,23 +48,29 @@ function Header({ mode, handleChange }) {
             </li>
           </a>
           <a className="relative inline-block" href="#about" target="_self">
-            <li className={`py-1 border-transparent hover:border-solid ${
+            <li
+              className={`py-1 border-transparent hover:border-solid ${
                 mode ? "hover:border-[#f5f5f5]" : "hover:border-[#151515]"
-              } hover:border-b-4 transition-all duration-75`}>
+              } hover:border-b-4 transition-all duration-75`}
+            >
               About
             </li>
           </a>
           <a className="relative inline-block" href="#projects" target="_self">
-            <li className={`py-1 border-transparent hover:border-solid ${
+            <li
+              className={`py-1 border-transparent hover:border-solid ${
                 mode ? "hover:border-[#f5f5f5]" : "hover:border-[#151515]"
-              } hover:border-b-4 transition-all duration-75`}>
+              } hover:border-b-4 transition-all duration-75`}
+            >
               Projects
             </li>
           </a>
           <a className="relative inline-block" href="#contact" target="_self">
-            <li className={`py-1 border-transparent hover:border-solid ${
+            <li
+              className={`py-1 border-transparent hover:border-solid ${
                 mode ? "hover:border-[#f5f5f5]" : "hover:border-[#151515]"
-              } hover:border-b-4 transition-all duration-75`}>
+              } hover:border-b-4 transition-all duration-75`}
+            >
               Contact
             </li>
           </a>

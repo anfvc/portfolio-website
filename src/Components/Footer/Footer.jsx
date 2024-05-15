@@ -1,5 +1,5 @@
-import avatar from "../../assets/avatar.png";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import Andres from "../../assets/Andres.png";
 
 function Footer({ mode }) {
   return (
@@ -36,7 +36,7 @@ function Footer({ mode }) {
           <a href="#">
             <img
               className="w-16 rounded-full object-cover"
-              src={avatar}
+              src={Andres}
               alt="avatar-image"
             />
           </a>
