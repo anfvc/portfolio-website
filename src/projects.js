@@ -16,7 +16,7 @@ export const projects = [
   {
     name: "Spotify Clone",
     description:
-      "This Website was built using HTML, CSS. I intended to make a copy based on the desktop version of Spotify. It responds to different screens making it fully responsive.",
+      "This Website was built using HTML, CSS. I intended to make a copy based on the desktop version of Spotify. It also responds to different kinds of device screens.",
     link: "https://spotify-clone-hcex.onrender.com/",
     image: spotify,
     techUsed: ["HTML", "CSS"],

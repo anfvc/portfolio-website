@@ -89,9 +89,9 @@ function Header({ mode, handleChange }) {
               : "absolute top-[100%] left-[-100%] right-[100%] opacity-0 ease-in-out duration-500"
           }
         >
-          <ul className="flex flex-col justify-center gap-6 font-semibold px-10 py-20 text-white h-full">
+          <ul className="flex flex-col justify-center font-semibold px-10 py-28 text-white h-full">
             <a
-              className="py-10 border-b border-[#f5f5f5]"
+              className="py-10 border-b border-t border-[#f5f5f5]"
               href="#"
               target="_self"
               onClick={handleMenu}

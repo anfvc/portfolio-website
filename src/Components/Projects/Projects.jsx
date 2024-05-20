@@ -7,7 +7,7 @@ function Projects({ mode }) {
     <section
       id="projects"
       className={`w-full ${
-        mode ? "bg-[#121212]" : " bg-[#f5f5f5]"
+        mode ? "bg-[#151515]" : " bg-[#f5f5f5]"
       } py-24 scroll-mt-20`}
     >
       <div className="w-full flex flex-col gap-16 px-5 md:px-20 mx-auto max-w-screen-2xl">
@@ -22,12 +22,12 @@ function Projects({ mode }) {
                   ? "first:border-t border-[#f5f5f5]"
                   : "first:border-t border-[#121212]"
               } py-10 text-justify`}
-              key={i}
+              key={i} data-aos="fade-left"
             >
               <h3 className="font-semibold">{project.name}</h3>
               <p>{project.description}</p>
 
-              <div className="flex flex-wrap items-center gap-3 font-semibold">
+              <div className="flex flex-wrap items-center gap-3.5 font-semibold justify-center md:justify-start">
                 {project.techUsed.map((language, i) => (
                   <div
                     className={`border ${
@@ -35,14 +35,14 @@ function Projects({ mode }) {
                         ? "hover:bg-[#f5f5f5] hover:text-[#151515] border-[#f5f5f5]"
                         : "hover:bg-[#151515] hover:text-[#f5f5f5] border-[#151515]"
                     } transition-all ease-linear rounded-md`}
-                    key={i}
+                    key={i} data-aos="fade-right"
                   >
-                    <p className="py-1 px-2">{language}</p>
+                    <p className="py-1 px-2" >{language}</p>
                   </div>
                 ))}
               </div>
 
-              <div className="flex gap-4">
+              <div className="flex gap-4 justify-center items-center md:justify-start" data-aos="fade-right">
                 <a
                   className="flex items-center gap-8 text-blue-900 text-3xl p-1"
                   href={project.link}

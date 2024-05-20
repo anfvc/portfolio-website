@@ -11,10 +11,10 @@ function Hero({ mode }) {
       <div className="flex gap-5 flex-col mb-20 w-full text-5xl mx-auto max-w-screen-2xl lg:gap-10 lg:flex-row">
         <div className="w-full flex justify-center py-32 px-14 pb-10">
           <div className="flex flex-col justify-center gap-12">
-            <h1 className="font-extrabold text-4xl md:text-6xl lg:text-7xl">
-              Hi there, I'm Andrés
+            <h1 className="font-extrabold text-center text-4xl md:text-6xl lg:text-7xl md:text-left">
+              Hey, I'm Andrés
             </h1>
-            <div className="flex flex-col font-extrabold md:flex-row">
+            <div className="flex flex-col items-center font-extrabold md:flex-row">
               <h2 className="font-extrabold text-4xl pr-2.5 md:text-4xl xl:text-5xl">
                 An integral
               </h2>
@@ -37,7 +37,7 @@ function Hero({ mode }) {
               impactful products and experiences for end-users, I'm always eager
               to continue growing professionally and advance as a developer.
             </p>
-            <div className="w-full flex gap-6">
+            <div className="w-full flex justify-center gap-6 md:justify-normal">
               <a href="mailto:andresvillay2@gmail.com">
                 <button
                   className="inline-flex items-center rounded-full px-4 py-2 md:px-8 md:py-5 text-xl font-semibold text-white bg-black border-black hover:text-black border-2

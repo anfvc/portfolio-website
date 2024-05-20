@@ -1,8 +1,8 @@
 import { MdOutlineEmail } from "react-icons/md";
 
-function Contact({ mode }) {
+function Contact() {
   return (
-    <section id="contact" className="w-full scroll-mt-20 py-36">
+    <section id="contact" className="w-full scroll-mt-20 pt-36 pb-36">
       <div className="w-full flex flex-col px-5 gap-10 md:px-20 mx-auto max-w-screen-2xl">
         <div className="w-full flex justify-center">
           <h2 className="font-bold text-5xl">Contact</h2>

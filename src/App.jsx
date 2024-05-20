@@ -7,12 +7,20 @@ import Projects from "./Components/Projects/Projects";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import { Paper } from "@mui/material";
 import { useState } from "react";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 function App() {
-  const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
+  useEffect(() => {
+    Aos.init();
+    Aos.refresh();
+  }, []);
+
+  const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
   const [mode, setMode] = useState(prefersDarkMode);
 
   const appTheme = createTheme({
@@ -29,9 +37,9 @@ function App() {
   return (
     <>
       <ThemeProvider theme={appTheme}>
-        <Paper elevation={0} square sx={{width: "100vw"}}>
+        <Paper elevation={0} square sx={{ width: "100vw" }}>
           <Header mode={mode} handleChange={handleChange} />
-          <main className="w-full">
+          <main className="w-full min-h-svh">
             <Hero mode={mode} />
             <Tech />
             <About mode={mode} />

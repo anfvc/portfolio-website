@@ -11,14 +11,14 @@ function About({ mode }) {
           <h2 className="font-bold text-5xl">About</h2>
         </div>
         <div className="w-full flex flex-col items-center gap-16 lg:flex-row lg:justiy-center lg:gap-12">
-          <div className="w-full h-full flex justify-center">
+          <div className="w-full h-full flex justify-center" data-aos="zoom-out-right">
             <img
               src={about2}
               className="w-5/5 md:w-8/8 lg:w-full rounded-2xl object-cover"
               alt="about-picture"
             />
           </div>
-          <div className="w-full flex flex-col gap-8 text-justify">
+          <div className="w-full flex flex-col gap-8 text-justify" data-aos="zoom-out-left">
             <h2 className="font-semibold text-4xl">Get to know me</h2>
             <p>
               I hold a degree in International Business and have a strong
