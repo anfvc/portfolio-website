@@ -4,7 +4,7 @@ function About({ mode }) {
   return (
     <section
       id="about"
-      className={`w-full flex justify-center py-20 scroll-mt-20 ${mode ? "bg-[#151515]" : " bg-[#f5f5f5]"}`}
+      className={`w-full flex justify-center py-20 scroll-mt-20 ${mode ? "bg-[#151515]" : " bg-[#f5f5f5]"} overflow-x-hidden`}
     >
       <div className="w-full flex flex-col gap-16 px-10 py-16 md:px-20 mx-auto max-w-screen-2xl">
         <div className="flex justify-center">
@@ -18,7 +18,7 @@ function About({ mode }) {
               alt="about-picture"
             />
           </div>
-          <div className="w-full flex flex-col gap-8 text-justify" data-aos="zoom-out-left">
+          <div className="w-full flex flex-col gap-8 text-justify" data-aos="zoom-out-left" data-aos-easing="ease">
             <h2 className="font-semibold text-4xl">Get to know me</h2>
             <p>
               I hold a degree in International Business and have a strong
