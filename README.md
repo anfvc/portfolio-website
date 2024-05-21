@@ -7,5 +7,5 @@ I developed this website with the purpose of showcasing a little bit about me, m
 - Either click on the server link or hold Ctrl (command) and click the link.
 
 ## Demo
-Check out the WIP [Demo](https://anfvc.onrender.com)
+To preview the end result, please click [here](https://anfvc.com).
 
