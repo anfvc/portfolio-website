@@ -46,7 +46,7 @@ function App() {
             <Projects mode={mode} />
             <Contact mode={mode} />
           </main>
-          <Footer mode={mode} />
+          <Footer mode={mode} className="min-h-svh" />
         </Paper>
       </ThemeProvider>
     </>
