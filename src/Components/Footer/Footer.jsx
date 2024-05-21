@@ -9,7 +9,7 @@ function Footer({ mode }) {
           mode ? "" : "border-black"
         } mx-auto max-w-screen-2xl`}
       >
-        <div className="w-full flex items-center gap-2" data-aos="zoom-out-right">
+        <div className="w-full flex items-center gap-2">
           <a
             className={`text-4xl p-2 rounded-full ${
               mode
@@ -33,10 +33,10 @@ function Footer({ mode }) {
             <FaLinkedin />
           </a>
         </div>
-        <div className="w-full flex justify-center items-center text-center" data-aos="zoom-out">
+        <div className="w-full flex justify-center items-center text-center">
           Developed by Andrés Villay &copy; {new Date().getFullYear()}
         </div>
-        <div className="w-full flex items-center justify-end" data-aos="zoom-out-left">
+        <div className="w-full flex items-center justify-end">
           <a href="#">
             <img
               className="w-12 rounded-full object-cover md:w-16"

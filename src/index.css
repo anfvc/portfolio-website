@@ -16,4 +16,5 @@
 body {
   font-size: 1.6rem;
   background-color: #151515;
+  min-width: 100svh;
 }
