@@ -3,7 +3,7 @@ import Andres from "../../assets/Andres.png";
 
 function Footer({ mode }) {
   return (
-    <footer className="w-full px-5 pt-40 md:px-20 overflow-x-hidden mt-auto">
+    <footer className="w-full px-5 pt-40 md:px-20 overflow-x-hidden">
       <div
         className={`w-full flex justify-center items-center border-t pt-20 pb-10 ${
           mode ? "" : "border-black"
