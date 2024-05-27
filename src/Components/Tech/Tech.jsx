@@ -11,8 +11,8 @@ function Tech() {
           <div className="w-full grid grid-cols-2 items-center gap-6 max:sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-10">
             {technologies.map((tech, i) => {
               return (
-                <div key={i} className="flex justify-center p-2 hover:scale-105 transition ease-in-out cursor-pointer">
-                  <img src={tech.image} alt={tech.name} loading="lazy" />
+                <div key={i} className="flex justify-center p-2 hover:scale-110 hover:transition hover:ease-in-out cursor-pointer">
+                  <img src={tech.image} alt={tech.name} loading="lazy" className="grayscale brightness-80 hover:grayscale-0 hover:duration-700 hover:ease-in-out" />
                 </div>
               );
             })}
