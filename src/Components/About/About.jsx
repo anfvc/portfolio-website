@@ -28,7 +28,7 @@ function About({ mode }) {
             <p>
               My professional journey began in the logistics industry, where I
               accumulated over 5 years of valuable experience. During this time,
-              I developed a diverse skill set and honed my professional
+              I developed a diverse skill set and refined my professional
               abilities.{" "}
             </p>
             <p>
@@ -37,7 +37,7 @@ function About({ mode }) {
               deepen my understanding of both theoretical concepts and practical
               skills. This enabled me to grasp the fundamentals of designing and
               developing user-friendly interfaces. However, my desire for
-              learning even further only grew stronger, as I became increasingly
+              learning only grew stronger, as I became increasingly
               convinced that I wanted to pursue a career in this field.
             </p>
             <p>
