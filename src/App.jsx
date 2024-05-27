@@ -37,7 +37,7 @@ function App() {
   return (
     <>
       <ThemeProvider theme={appTheme}>
-        <Paper elevation={0} square sx={{ /* width: "100vw", */ overflowX: "hidden" }}>
+        <Paper elevation={0} square sx={{ /* width: "100vw", */ }}>
           <Header mode={mode} handleChange={handleChange} />
           <main className="w-full min-h-screen">
             <Hero mode={mode} />

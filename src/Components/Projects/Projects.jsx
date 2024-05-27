@@ -10,7 +10,7 @@ function Projects({ mode }) {
         mode ? "bg-[#151515]" : " bg-[#f5f5f5]"
       } py-36 overflow-x-hidden scroll-mt-60`}
     >
-      <div className="w-full flex flex-col gap-16 px-5 md:px-20 mx-auto max-w-screen-2xl">
+      <div className="w-full flex flex-col gap-16 px-10 md:px-20 mx-auto max-w-screen-2xl">
         <div className="w-full flex justify-center mx-auto">
           <h2 className="font-bold text-5xl">Projects</h2>
         </div>
