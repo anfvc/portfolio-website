@@ -8,6 +8,8 @@ import nodejs2 from "../../assets/nodejs2.svg";
 import git2 from "../../assets/git2.svg";
 import github2 from "../../assets/github2.svg";
 import vscode2 from "../../assets/vscode2.svg";
+import mongo from "../../assets/mongo.svg";
+import express from "../../assets/express.svg";
 
 export const technologies = [
   {
@@ -49,5 +51,13 @@ export const technologies = [
   {
     name: "Vscode",
     image: vscode2,
+  },
+  {
+    name: "Mongo",
+    image: mongo,
+  },
+  {
+    name: "Express",
+    image: express,
   },
 ];

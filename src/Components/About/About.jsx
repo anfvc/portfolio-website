@@ -18,7 +18,7 @@ function About({ mode }) {
               alt="about-picture"
             />
           </div>
-          <div className="w-full flex flex-col gap-8 text-justify" data-aos="zoom-out-left" data-aos-easing="ease">
+          <div className="w-full flex flex-col gap-8 text-left" data-aos="zoom-out-left" data-aos-easing="ease">
             <h2 className="font-semibold text-4xl">Get to know me</h2>
             <p>
               I hold a degree in International Business and have a strong

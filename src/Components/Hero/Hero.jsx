@@ -30,7 +30,7 @@ function Hero({ mode }) {
                 loop
               ></ReactTyped>
             </div>
-            <p className="text-3xl md:text-4xl text-justify">
+            <p className="text-3xl md:text-4xl text-left">
               I'm a tech enthusiast making a transition into the Web Development
               industry. Aiming to become the best developer I can be, I have a
               keen interest in bringing innovative ideas to life and crafting
@@ -40,8 +40,10 @@ function Hero({ mode }) {
             <div className="w-full flex justify-center gap-6 md:justify-normal">
               <a href="mailto:andresvillay2@gmail.com">
                 <button
-                  className="inline-flex items-center rounded-full px-4 py-2 md:px-8 md:py-5 text-xl font-semibold text-white bg-black border-black hover:text-black border-2
-              hover:bg-white transition ease-in-out delay-90 hover:-translate-y-1 duration-500 focus:bg-white focus:text-black"
+                  className={`inline-flex items-center rounded-full px-4 py-2 md:px-8 md:py-5 text-xl font-semibold text-white ${
+                    mode ? "border-white" : ""
+                  } bg-black border-black  hover:text-black border-2
+              hover:bg-white transition ease-in-out delay-90 hover:-translate-y-1 duration-500 focus:bg-white focus:text-black`}
                 >
                   Reach Out
                 </button>
@@ -49,7 +51,7 @@ function Hero({ mode }) {
               <a href="#stack">
                 <button
                   className="inline-flex items-center rounded-full px-4 py-2 md:px-8 md:py-5 text-xl font-semibold text-black bg-white border-black hover:text-white border-2
-              hover:bg-black transition ease-in-out delay-90 hover:-translate-y-1 duration-500 focus:bg-black focus:text-white"
+              hover:bg-black hover:border-white transition ease-in-out delay-90 hover:-translate-y-1 duration-500 focus:bg-black focus:text-white"
                 >
                   Tech Stack
                 </button>
@@ -57,10 +59,10 @@ function Hero({ mode }) {
             </div>
             <div className="w-full flex items-center justify-center pt-16 gap-8 md:justify-start lg:justify-start">
               <a
-                className={`text-5xl p-4 rounded-full ${
+                className={`text-5xl p-4 rounded-full border-2 ${
                   mode
-                    ? "bg-black hover:bg-[#f0f0f0] hover:text-[#121212]"
-                    : "bg-white hover:bg-[#121212] hover:text-[#f0f0f0]"
+                    ? "bg-black border-white hover:bg-[#f0f0f0] hover:text-[#121212]"
+                    : "bg-white border-black hover:bg-[#121212] hover:text-[#f0f0f0]"
                 } transition-all ease-linear`}
                 href="https://github.com/anfvc"
                 target="_blank"
@@ -68,10 +70,10 @@ function Hero({ mode }) {
                 <FaGithub />
               </a>
               <a
-                className={`text-5xl p-4 rounded-full ${
+                className={`text-5xl p-4 rounded-full border-2 ${
                   mode
-                    ? "bg-black hover:bg-[#f0f0f0] hover:text-[#121212]"
-                    : "bg-white hover:bg-[#121212] hover:text-[#f0f0f0]"
+                    ? "bg-black border-white hover:bg-[#f0f0f0] hover:text-[#121212]"
+                    : "bg-white border-black hover:bg-[#121212] hover:text-[#f0f0f0]"
                 } transition-all ease-linear`}
                 href="https://linkedin.com/in/avillay"
                 target="_blank"
