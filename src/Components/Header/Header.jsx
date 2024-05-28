@@ -85,7 +85,7 @@ function Header({ mode, handleChange }) {
         <div
           className={
             hamburger
-              ? "absolute left-0 right-0 bg-black top-[100%] opacity-100 w-screen py-1 ease-in-out duration-500"
+              ? "absolute left-0 right-0 bg-black top-[100%] opacity-100 py-1 ease-in-out duration-500"
               : "absolute top-[100%] left-[-100%] right-[100%] opacity-0 ease-in-out duration-500"
           }
         >
