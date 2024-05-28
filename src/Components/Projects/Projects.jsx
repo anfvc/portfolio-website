@@ -54,7 +54,7 @@ function Projects({ mode }) {
                 data-aos="fade-down"
               >
                 <a
-                  className="flex items-center gap-8 text-blue-900 text-3xl p-1"
+                  className="flex items-center gap-8 text-4xl p-1"
                   href={project.link}
                   target="_blank"
                 >

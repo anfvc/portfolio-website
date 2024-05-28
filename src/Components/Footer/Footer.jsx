@@ -34,7 +34,7 @@ function Footer({ mode }) {
           </a>
         </div>
         <div className="w-full flex justify-center items-center text-center">
-          Developed by Andrés Villay &copy; {new Date().getFullYear()}
+          Andrés Villay &copy; {new Date().getFullYear()}
         </div>
         <div className="w-full flex items-center justify-end">
           <a href="#">
