@@ -23,7 +23,7 @@ function Projects({ mode }) {
                   : "first:border-t border-[#121212]"
               } py-10 text-justify`}
               key={i}
-              data-aos="fade-right"
+              data-aos="zoom-in"
               data-aos-offset="300"
               data-aos-easing="ease-in-sine"
             >
