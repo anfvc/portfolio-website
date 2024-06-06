@@ -11,7 +11,7 @@ function Tech() {
           <h2 className="font-bold text-5xl">Tech Stack</h2>
         </div>
         <div className="w-full flex flex-col items-center justify-center">
-          <div className="w-full grid grid-cols-3 items-center gap-8 md:grid-cols-6 lg:grid-cols-12">
+          <div className="w-full grid grid-cols-3 items-center gap-8 md:grid-cols-4 lg:grid-cols-10">
             {technologies.map((tech, i) => {
               return (
                 <div

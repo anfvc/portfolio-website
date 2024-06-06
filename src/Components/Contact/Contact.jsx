@@ -18,8 +18,11 @@ function Contact() {
             <span>
               <MdOutlineEmail />
             </span>
+
             <h3 className="text-4xl text-center md:text-5xl">
-              andresvillay2@gmail.com
+              <a href="mailto:andresvillay2@gmail.com">
+                andresvillay2@gmail.com
+              </a>
             </h3>
           </div>
         </div>
