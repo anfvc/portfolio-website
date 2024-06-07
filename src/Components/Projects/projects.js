@@ -1,7 +1,7 @@
-import euro from "./assets/euroimg.png";
-import react from "./assets/reactshopimg.png";
-import spotify from "./assets/spotifycloneimg.png";
-import calculator from "./assets/Calculatorimg.png";
+import euro from "../../assets/euroimg.png";
+import react from "../../assets/reactshopimg.png";
+import spotify from "../../assets/spotifycloneimg.png";
+import calculator from "../../assets/Calculatorimg.png";
 
 export const projects = [
   {

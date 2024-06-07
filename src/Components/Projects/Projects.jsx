@@ -1,4 +1,4 @@
-import { projects } from "../../projects.js";
+import { projects } from "./projects.js";
 import { FiGithub } from "react-icons/fi";
 import { FiExternalLink } from "react-icons/fi";
 

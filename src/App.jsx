@@ -15,13 +15,12 @@ import { useState } from "react";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 function App() {
+  const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
+  const [mode, setMode] = useState(prefersDarkMode);
   useEffect(() => {
     Aos.init();
     Aos.refresh();
-  }, []);
-
-  const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
-  const [mode, setMode] = useState(prefersDarkMode);
+  }, [mode]);
 
   const appTheme = createTheme({
     palette: {
@@ -37,7 +36,15 @@ function App() {
   return (
     <>
       <ThemeProvider theme={appTheme}>
-        <Paper elevation={0} square sx={{ /* width: "100vw", */ }}>
+        <Paper
+          elevation={0}
+          square
+          sx={
+            {
+              /* width: "100vw", */
+            }
+          }
+        >
           <Header mode={mode} handleChange={handleChange} />
           <main className="w-full min-h-screen">
             <Hero mode={mode} />
