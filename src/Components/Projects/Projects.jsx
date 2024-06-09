@@ -1,6 +1,6 @@
-import { projects } from "./projects.js";
 import { FiGithub } from "react-icons/fi";
 import { FiExternalLink } from "react-icons/fi";
+import projects from "./projects.js";
 
 function Projects({ mode }) {
   return (

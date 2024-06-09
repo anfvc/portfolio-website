@@ -3,16 +3,17 @@ import Header from "./Components/Header/Header";
 import Hero from "./Components/Hero/Hero";
 import About from "./Components/About/About";
 import Tech from "./Components/Tech/Tech";
-import Projects from "./Components/Projects/Projects";
+import Projects from "./Components/Projects/Projects.jsx";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
-import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import { useEffect } from "react";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { Paper } from "@mui/material";
 import { useState } from "react";
-import useMediaQuery from "@mui/material/useMediaQuery";
+import { useMemo } from "react";
 
 function App() {
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
@@ -22,11 +23,15 @@ function App() {
     Aos.refresh();
   }, [mode]);
 
-  const appTheme = createTheme({
-    palette: {
-      mode: mode ? "dark" : "light",
-    },
-  });
+  const appTheme = useMemo(
+    () =>
+      createTheme({
+        palette: {
+          mode: mode ? "dark" : "light",
+        },
+      }),
+    [mode]
+  );
 
   function handleChange() {
     if (mode) setMode(false);

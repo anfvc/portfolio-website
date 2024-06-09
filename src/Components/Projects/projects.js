@@ -3,7 +3,7 @@ import react from "../../assets/reactshopimg.png";
 import spotify from "../../assets/spotifycloneimg.png";
 import calculator from "../../assets/Calculatorimg.png";
 
-export const projects = [
+const projects = [
   {
     name: "The React Shop",
     description:
@@ -41,3 +41,5 @@ export const projects = [
     github: "https://github.com/anfvc/Euro-Germany.git",
   },
 ];
+
+export default projects;
