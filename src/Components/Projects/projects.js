@@ -11,7 +11,7 @@ const projects = [
       "Contact Manager is a full-stack application. Intended to show different functionalities such as: add, edit delete contacts from a user's perspective.",
     link: "https://contact-manager-f-779t.onrender.com",
     image: manager,
-    techUsed: ["Express", "MondoDB", "Node", "React", "TailwindCSS"],
+    techUsed: ["Express", "MongoDB", "Node", "React", "TailwindCSS"],
     github: "https://github.com/anfvc/address-book.git",
   },
   {
