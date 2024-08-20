@@ -6,6 +6,15 @@ import manager from "../../assets/Managerimg.png";
 
 const projects = [
   {
+    name: "Bloomora Flower Shop",
+    description:
+      "Bloomora was a collab project I did along with my colleages at DCI for the course final project. We wanted to create an full stack e-commerce application whose main product, were flowers. It intended to take the user through a smooth shopping experience while also offering a smooth checkout process achieved by calling the Stripe hosted page. As well as storing all of our product images using Cloudinary. Please note that it may take a while to load.",
+    link: "https://final-project-jran.onrender.com",
+    image: manager,
+    techUsed: ["Express", "MongoDB", "Node", "React", "CSS", "MaterialUI", "Stripe", "Cloudinary"],
+    github: "https://github.com/anfvc/bloomora-flower-shop.git",
+  },
+  {
     name: "Contact Manager",
     description:
       "Contact Manager is a full-stack application. Intended to show different functionalities such as: add, edit delete contacts from a user's perspective.",
