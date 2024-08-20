@@ -21,6 +21,7 @@ function Tech() {
                   <img
                     src={tech.image}
                     alt={tech.name}
+                    title={tech.name}
                     loading="lazy"
                     className="grayscale brightness-80 hover:grayscale-0 hover:duration-700 hover:ease-in-out"
                   />

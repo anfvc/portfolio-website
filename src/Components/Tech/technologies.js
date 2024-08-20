@@ -10,6 +10,10 @@ import github2 from "../../assets/github2.svg";
 import vscode2 from "../../assets/vscode2.svg";
 import mongo from "../../assets/mongo.svg";
 import express from "../../assets/express.svg";
+import wordpress from "../../assets/wordpress.svg";
+import jira from "../../assets/jira.svg";
+
+
 
 export const technologies = [
   {
@@ -59,5 +63,13 @@ export const technologies = [
   {
     name: "Express",
     image: express,
+  },
+  {
+    name: "WordPress",
+    image: wordpress,
+  },
+  {
+    name: "Jira",
+    image: jira,
   },
 ];
