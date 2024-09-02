@@ -14,6 +14,7 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { Paper } from "@mui/material";
 import { useState } from "react";
 import { useMemo } from "react";
+import Experience from "./Components/Experience/Experience.jsx";
 
 function App() {
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
@@ -55,6 +56,7 @@ function App() {
             <Hero mode={mode} />
             <Tech />
             <About mode={mode} />
+            <Experience mode={mode} />
             <Projects mode={mode} />
             <Contact mode={mode} />
           </main>

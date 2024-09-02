@@ -56,6 +56,15 @@ function Header({ mode, handleChange }) {
               About
             </li>
           </a>
+          <a className="relative inline-block" href="#experience" target="_self">
+            <li
+              className={`py-1 border-transparent hover:border-solid ${
+                mode ? "hover:border-[#f5f5f5]" : "hover:border-[#151515]"
+              } hover:border-b-4 transition-all duration-75`}
+            >
+              Experience
+            </li>
+          </a>
           <a className="relative inline-block" href="#projects" target="_self">
             <li
               className={`py-1 border-transparent hover:border-solid ${
@@ -105,6 +114,14 @@ function Header({ mode, handleChange }) {
               onClick={handleMenu}
             >
               <li>About</li>
+            </a>
+            <a
+              className="py-10 border-b border-[#f5f5f5]"
+              href="#projects"
+              target="_self"
+              onClick={handleMenu}
+            >
+              <li>Experience</li>
             </a>
             <a
               className="py-10 border-b border-[#f5f5f5]"
