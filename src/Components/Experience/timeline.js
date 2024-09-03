@@ -40,7 +40,7 @@ const timelineElements = [
     title: "Intern & Jr. Operations Manager",
     companyOrSchool: "Grover SE",
     location: "Berlin, Germany",
-    description: "First professional experience in Germany. Started out as an Operations Intern and worked my way up to Juniort Operations Manager 1+ years later.",
+    description: "First professional experience in Germany. Started out as an Operations Intern and worked my way up to Junior Operations Manager 1+ years later.",
     buttonText: "Details",
     date: "April 2018 - October 2020",
     icon: "work",
