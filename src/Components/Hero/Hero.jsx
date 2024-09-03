@@ -8,7 +8,7 @@ function Hero({ mode }) {
       id="home"
       className={`w-full ${mode ? "bg-[#151515]" : " bg-[#f5f5f5]"} `}
     >
-      <div className="flex gap-5 flex-col mb-20 w-full text-5xl mx-auto max-w-screen-2xl lg:gap-10 lg:flex-row">
+      <div className="flex gap-5 flex-col-reverse mb-20 w-full text-5xl mx-auto max-w-screen-2xl lg:gap-10 lg:flex-row">
         <div className="w-full flex justify-center py-32 px-14 pb-10">
           <div className="flex flex-col justify-center gap-16">
             <h1 className="font-extrabold text-center text-4xl md:text-6xl lg:text-7xl md:text-left">
