@@ -117,7 +117,7 @@ function Header({ mode, handleChange }) {
             </a>
             <a
               className="py-10 border-b border-[#f5f5f5]"
-              href="#projects"
+              href="#experience"
               target="_self"
               onClick={handleMenu}
             >

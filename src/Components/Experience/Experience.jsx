@@ -1,50 +1,77 @@
 import timelineElements from "./timeline";
-import school from "../../assets/school.svg";
-import work from "../../assets/work.svg";
+import workIcon from "../../assets/work.svg";
+import schoolIcon from "../../assets/school.svg";
+
+import {
+  VerticalTimelineElement,
+  VerticalTimeline,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
 
 function Experience({ mode }) {
+  let workIconStyles = {
+    background: mode ? "#ffffff" : "#000000", // Set background color directly
+    border: `1px solid ${mode ? "#ffffff" : "#000000"}`, // Set border color directly
+    display: "flex", // Flexbox to center the icon
+    justifyContent: "center",
+    alignItems: "center",
+  };
+  let schoolIconStyles = {
+    background: mode ? "#ffffff" : "#000000", // Set background color directly
+    border: `1px solid ${mode ? "#ffffff" : "#000000"}`, // Set border color directly
+    display: "flex", // Flexbox to center the icon
+    justifyContent: "center",
+    alignItems: "center",
+  };
+
+  let iconFilter = mode ? "invert(0)" : "invert(1)";
+
   return (
     <section
       id="experience"
       className={`w-full ${
-        mode ? "bg-[#151515]" : " bg-[#f5f5f5]"
+        mode ? "bg-[#151515]" : "bg-[#f5f5f5]"
       } py-36 overflow-x-hidden scroll-mt-60`}
     >
       <div className="flex flex-col px-10 py-10 gap-16 md:px-20">
         <div className="w-full flex justify-center">
           <h2 className="font-bold text-5xl">Experience</h2>
         </div>
-        <div className="w-full bg-red-600 flex flex-col items-center justify-center">
+        <VerticalTimeline lineColor={`${mode ? "white" : "black"}`} animate={true}>
           {timelineElements.map((item) => {
+            let isWorkIcon = item.icon === "work";
             return (
-              <div key={item.id} className="flex m-4 relative">
-                <div></div>
-                <div></div>
-                <div className="hidden items-start w-44 pt-0.5 relative sm:flex">
-                  <div className="w-4/5">{item.date}</div>
-                  <div></div>
+              <VerticalTimelineElement
+                key={item.id}
+                date={<span className="text-2xl">{item.date}</span>}
+
+                iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
+                icon={
                   <img
-                    src={item.icon === "school" ? school : work}
-                    alt={item.title}
-                    className="w-10 p-1 rounded-lg z-20"
+                    src={isWorkIcon ? workIcon : schoolIcon}
+                    className="w-full"
+                    alt="icon"
+                    style={{ filter: iconFilter, width: "50%", height: "50%" }}
                   />
-                  <div></div>
-                </div>
-                <div>
-                  <div>{item.title}</div>
-                  <div>
-                    {item.location}{" "}
-                    <span className="sm:hidden">| {item.date}</span>
-                  </div>
-                  <div>{item.description}</div>
-                  <div></div>
-                  <img src={item.icon === "school" ? school : work} alt={item.title} className="w-8 p-1 rounded-lg z-20 absolute left-4 top-4 sm:hidden" />
-                  <a href=""></a>
-                </div>
-              </div>
+
+                }
+                contentStyle={{background: "none", border: `1px solid`}}
+                contentArrowStyle={{border: "solid", clipPath: "polygon(80% 0%, 10% 50%, 80% 100%)"}}
+              >
+                <h3
+                  className={`${
+                    mode ? "text-white" : "text-black"
+                  } font-bold vertical-timeline-element-title`}
+                >
+                  {item.title}
+                </h3>
+                <h5 className="font-semibold">{item.location}</h5>
+                <h4>{item.companyOrSchool}</h4>
+                <h6>{item.description}</h6>
+              </VerticalTimelineElement>
             );
           })}
-        </div>
+        </VerticalTimeline>
       </div>
     </section>
   );
