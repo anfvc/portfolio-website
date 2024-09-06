@@ -28,7 +28,7 @@ const timelineElements = [
     title: "Supply Chain Manager",
     companyOrSchool: "Grover SE",
     location: "Berlin, Germany",
-    description: "After having worked a few years in the same company, I could finally get a managerial position where I was give lots of responsibilities as well as freedom to make decisions and lead a team.",
+    description: "After having worked a few years in the same company, I could finally get a managerial position where I was given lots of responsibilities as well as freedom to make decisions and lead a team.",
     buttonText: "Details",
     date: "October 2020 - June 2023",
     icon: "work",
