@@ -1,5 +1,5 @@
 import timelineElements from "./timeline";
-import workIcon from "../../assets/work.svg";
+import workIcon from "../../assets/case.svg";
 import schoolIcon from "../../assets/school.svg";
 
 import {
@@ -51,7 +51,7 @@ function Experience({ mode }) {
                     src={isWorkIcon ? workIcon : schoolIcon}
                     className="w-full"
                     alt="icon"
-                    style={{ filter: iconFilter, width: "50%", height: "50%" }}
+                    style={{ filter: iconFilter, width: "60%", height: "60%" }}
                   />
 
                 }
