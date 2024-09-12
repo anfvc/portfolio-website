@@ -1,7 +1,7 @@
 const timelineElements = [
   {
     id: 1,
-    title: "Web Development Intern",
+    title: "Junior Frontend Developer",
     companyOrSchool: "Train the Future UG",
     location: "Berlin, Germany",
     description: "First Web Development experience. ",
