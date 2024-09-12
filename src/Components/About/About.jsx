@@ -18,6 +18,7 @@ function About({ mode }) {
               src={about3}
               className="w-5/5 md:w-8/8 lg:w-full rounded-2xl object-cover"
               alt="about-picture"
+              loading="lazy"
             />
           </div>
           <div className="w-full flex flex-col gap-8 text-left" data-aos="zoom-out-left" data-aos-easing="ease">
