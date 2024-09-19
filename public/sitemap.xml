@@ -5,24 +5,4 @@
     <lastmod>2024-09-09T00:00:00+00:00</lastmod>
     <priority>1.00</priority>
   </url>
-  <url>
-    <loc>https://anfvc.com/about</loc>
-    <lastmod>2024-09-09T00:00:00+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://anfvc.com/experience</loc>
-    <lastmod>2024-09-09T00:00:00+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://anfvc.com/projects</loc>
-    <lastmod>2024-09-09T00:00:00+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://anfvc.com/contact</loc>
-    <lastmod>2024-09-09T00:00:00+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
 </urlset>
