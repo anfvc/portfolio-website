@@ -18,7 +18,7 @@ function Contact({ mode }) {
   async function handleSubmit(e) {
     e.preventDefault();
 
-    const serviceId = "service_dbs5cv";
+    const serviceId = "service_dbs5cvj";
     const templateId = "template_mv2035u";
     const userId = "qRn3iEpbpvzwNq2gF";
 
