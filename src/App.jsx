@@ -15,6 +15,7 @@ import { Paper } from "@mui/material";
 import { useState } from "react";
 import { useMemo } from "react";
 import Experience from "./Components/Experience/Experience.jsx";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
@@ -42,6 +43,10 @@ function App() {
   return (
     <>
       <ThemeProvider theme={appTheme}>
+        <ToastContainer
+          theme={`${mode ? "dark" : "light"}`}
+          position="bottom-right"
+        />
         <Paper
           elevation={0}
           square
