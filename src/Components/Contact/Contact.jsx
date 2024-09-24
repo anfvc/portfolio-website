@@ -56,15 +56,15 @@ function Contact({ mode }) {
         const data = await response.text();
         console.log(data);
         setFormDetails(formInitialDetails);
-        toast.success("Thank you for your message.");
+        toast.success("Thank you for your email!");
       } else {
         const error = await response.json();
         toast.error(
-          error.message || "There was an error sending your message."
+          error.message || "There was an error sending your email"
         );
       }
     } catch (error) {
-      toast.error("Please refresh the page and try again.");
+      toast.error("Please try again later");
       setFormDetails(formInitialDetails);
     }
   }
