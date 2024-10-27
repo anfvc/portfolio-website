@@ -3,8 +3,18 @@ import react from "../../assets/reactshopimg.png";
 import spotify from "../../assets/spotifycloneimg.png";
 import calculator from "../../assets/Calculatorimg.png";
 import manager from "../../assets/Managerimg.png";
+import bitez from "../../assets/bitezimg.png"
 
 const projects = [
+  {
+    name: "Bitez Food App",
+    description:
+      "Bitez is a fullstack app. Its purpose is to serve as a restaurant app where you can select from a different oferring of products, place orders, have a complete overview of all your orders, track them and pay for them using Stripe's hosted page. It also counts with an admin panel which is intended to serve the app's content and is also used for updating order's statuses.",
+    link: "https://bitez-food-app.onrender.com",
+    image: bitez,
+    techUsed: ["Express", "MongoDB", "Node", "React", "TailwindCSS", "Stripe"],
+    github: "https://github.com/anfvc/bitez-food-app.git",
+  },
   {
     name: "Bloomora Flower Shop",
     description:
