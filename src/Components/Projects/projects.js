@@ -9,7 +9,7 @@ const projects = [
   {
     name: "Bitez Food App",
     description:
-      "Bitez is a fullstack app. Its purpose is to serve as a restaurant app where you can select from a different oferring of products, place orders, have a complete overview of all your orders, track them and pay for them using Stripe's hosted page. It also counts with an admin panel which is intended to serve the app's content and is also used for updating order's statuses.",
+      "Bitez is a fullstack app. Its purpose is to serve as a restaurant app where you can select from a different oferring of products, place orders, have a complete overview of all your orders, track them and pay for them using Stripe's hosted page. It also counts with an admin panel which is intended to serve the app's content and is also used for updating order's statuses. Unfortunately, its functionality in production is limited for the time being. Redirection from Stripe hosted page does not work as intented.",
     link: "https://bitez-food-app.onrender.com",
     image: bitez,
     techUsed: ["Express", "MongoDB", "Node", "React", "TailwindCSS", "Stripe"],
