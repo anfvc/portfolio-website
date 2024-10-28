@@ -57,7 +57,7 @@ function App() {
           }
         >
           <Header mode={mode} handleChange={handleChange} />
-          <main className="w-full min-h-screen">
+          <main className="w-full min-h-dvh">
             <Hero mode={mode} />
             <Tech />
             <About mode={mode} />
