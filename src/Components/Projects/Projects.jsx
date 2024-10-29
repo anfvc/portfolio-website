@@ -17,7 +17,7 @@ function Projects({ mode }) {
         <div className="w-full flex flex-col justify-center items-center">
           {projects.map((project, i) => (
             <div
-              className={`w-full flex flex-col gap-8 border-x-none border-y border-t-0 ${
+              className={`w-full flex flex-col md:flex-row-reverse md:items-center gap-20 border-x-none border-y border-t-0 ${
                 mode
                   ? "first:border-t border-[#f5f5f5]"
                   : "first:border-t border-[#121212]"
@@ -27,46 +27,54 @@ function Projects({ mode }) {
               data-aos-offset="300"
               data-aos-easing="ease-in-sine"
             >
-              <h3 className="font-semibold">{project.name}</h3>
-              <p>{project.description}</p>
-
-              <div className="flex flex-wrap items-center gap-3.5 font-semibold justify-center md:justify-start">
-                {project.techUsed.map((language, i) => (
-                  <div
-                    className={`border ${
-                      mode
-                        ? "hover:bg-[#f5f5f5] hover:text-[#151515] border-[#f5f5f5]"
-                        : "hover:bg-[#151515] hover:text-[#f5f5f5] border-[#151515]"
-                    } transition-all ease-linear rounded-md`}
-                    key={i}
-                    data-aos="fade-left"
-                    data-aos-offset="300"
-                    data-aos-easing="ease-in-cubic
-                    "
-                  >
-                    <p className="py-1 px-2">{language}</p>
-                  </div>
-                ))}
+              <div className="w-full">
+                <img
+                  src={project.image}
+                  alt={"Image of" + " " + project.name}
+                  className="w-full grayscale brightness-80 hover:grayscale-0 hover:duration-700 hover:ease-in-out"
+                />
               </div>
+              <div className="w-full flex flex-col gap-8">
+                <h3 className="font-semibold text-3xl">{project.name}</h3>
+                <p>{project.description}</p>
 
-              <div
-                className="flex gap-4 justify-center items-center md:justify-start"
-                data-aos="fade-down"
-              >
-                <a
-                  className="flex items-center gap-8 text-4xl p-1"
-                  href={project.link}
-                  target="_blank"
+                <div className="flex flex-wrap items-center gap-3.5 font-semibold justify-start md:justify-start">
+                  {project.techUsed.map((language, i) => (
+                    <div
+                      className={`border ${
+                        mode
+                          ? "hover:bg-[#f5f5f5] hover:text-[#151515] border-[#f5f5f5]"
+                          : "hover:bg-[#151515] hover:text-[#f5f5f5] border-[#151515]"
+                      } transition-all ease-linear rounded-md`}
+                      key={i}
+                      data-aos="fade-left"
+                      data-aos-offset="300"
+                      data-aos-easing="ease-in-cubic
+                    "
+                    >
+                      <p className="py-1 px-2">{language}</p>
+                    </div>
+                  ))}
+                </div>
+                <div
+                  className="flex gap-4 justify-start items-center"
+                  data-aos="fade-down"
                 >
-                  <FiExternalLink />
-                </a>
-                {/* <a
+                  <a
+                    className="flex items-center gap-8 text-4xl p-1"
+                    href={project.link}
+                    target="_blank"
+                  >
+                    <FiExternalLink />
+                  </a>
+                  {/* <a
                   className="flex items-center gap-8 text-blue-900 text-3xl p-1"
                   href={project.github}
                   target="_blank"
                 >
                   <FiGithub />
                 </a> */}
+                </div>
               </div>
             </div>
           ))}
