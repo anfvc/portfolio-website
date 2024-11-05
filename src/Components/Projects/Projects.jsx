@@ -10,14 +10,14 @@ function Projects({ mode }) {
         mode ? "bg-[#151515]" : " bg-[#f5f5f5]"
       } py-36 overflow-x-hidden scroll-mt-60`}
     >
-      <div className="w-full flex flex-col gap-16 px-10 md:px-20 mx-auto max-w-screen-2xl">
+      <div className="w-full flex flex-col gap-16 px-10 md:px-20 mx-auto max-w-screen-xl">
         <div className="w-full flex justify-center mx-auto">
           <h2 className="font-bold text-5xl">Projects</h2>
         </div>
         <div className="w-full flex flex-col justify-center items-center gap-10">
           {projects.map((project, i) => (
             <div
-              className={`w-full flex flex-col md:flex-row-reverse md:items-center gap-20 border p-12 border-y rounded-3xl ${
+              className={`w-full flex h-fit flex-col md:flex-row-reverse md:items-center gap-20 border py-8 px-8 border-y rounded-3xl ${
                 mode
                   ? "first:border-t border-[#f5f5f5]"
                   : "first:border-t border-[#121212]"
@@ -31,7 +31,7 @@ function Projects({ mode }) {
                 <img
                   src={project.image}
                   alt={"Image of" + " " + project.name}
-                  className="w-full grayscale brightness-80 hover:grayscale-0 hover:duration-700 hover:ease-in-out"
+                  className="w-full rounded-3xl grayscale brightness-80 hover:grayscale-0 hover:duration-700 hover:ease-in-out"
                 />
               </div>
               <div className="w-full flex flex-col gap-8">
