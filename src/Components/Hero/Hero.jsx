@@ -38,7 +38,7 @@ function Hero({ mode }) {
               to continue growing professionally and advance as a developer.
             </p>
             <div className="w-full flex justify-center gap-6 md:justify-normal">
-              <a href="mailto:andresvillay2@gmail.com">
+              <a href="#contact">
                 <button
                   className={`inline-flex items-center rounded-full px-4 py-2 md:px-8 md:py-5 text-xl font-semibold text-white ${
                     mode ? "border-white" : ""
