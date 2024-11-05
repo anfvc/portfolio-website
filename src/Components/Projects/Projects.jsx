@@ -17,10 +17,10 @@ function Projects({ mode }) {
         <div className="w-full flex flex-col justify-center items-center gap-10">
           {projects.map((project, i) => (
             <div
-              className={`w-full flex h-fit flex-col md:flex-row-reverse md:items-center gap-20 border py-8 px-8 border-y rounded-3xl ${
+              className={`w-full flex h-fit flex-col  md:flex-row-reverse md:items-center gap-20 border py-8 px-8 border-y rounded-3xl ${
                 mode
-                  ? "first:border-t border-[#f5f5f5]"
-                  : "first:border-t border-[#121212]"
+                  ? "first:border-t border-[#f5f5f5] "
+                  : "first:border-t border-[#121212] shadow-lg"
               } py-10 text-justify`}
               key={i}
               data-aos="zoom-in"

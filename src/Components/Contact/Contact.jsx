@@ -93,7 +93,7 @@ function Contact({ mode }) {
             <div className="w-full">
               <form
                 className={`w-full flex flex-col gap-3  font-normal text-4xl rounded-xl border ${
-                  mode ? "border-white bg-black" : "border-black"
+                  mode ? "border-white bg-black" : "border-black shadow-xl"
                 } p-16`}
                 onSubmit={handleSubmit}
               >
