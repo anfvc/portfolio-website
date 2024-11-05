@@ -14,10 +14,10 @@ function Projects({ mode }) {
         <div className="w-full flex justify-center mx-auto">
           <h2 className="font-bold text-5xl">Projects</h2>
         </div>
-        <div className="w-full flex flex-col justify-center items-center">
+        <div className="w-full flex flex-col justify-center items-center gap-10">
           {projects.map((project, i) => (
             <div
-              className={`w-full flex flex-col md:flex-row-reverse md:items-center gap-20 border-x-none border-y border-t-0 ${
+              className={`w-full flex flex-col md:flex-row-reverse md:items-center gap-20 border p-12 border-y rounded-3xl ${
                 mode
                   ? "first:border-t border-[#f5f5f5]"
                   : "first:border-t border-[#121212]"
