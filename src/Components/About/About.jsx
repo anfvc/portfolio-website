@@ -44,8 +44,8 @@ function About({ mode }) {
               convinced that I wanted to pursue a career in this field.
             </p>
             <p>
-              Subsequently, I seized the opportunity to enroll in a one-year,
-              full-time Full Stack Web Development training program. My aim is
+              Subsequently, I had the opportunity to enroll in a one-year,
+              Full Stack Web Development program at the <a href="https://digitalcareerinstitute.org/" target="_blank">Digital Career Institute GmbH</a>, which I have successfully completed. My aim is
               to become a well-rounded developer equipped with the necessary
               skills to excel in the industry.
             </p>
