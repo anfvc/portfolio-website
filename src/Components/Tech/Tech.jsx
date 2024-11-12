@@ -8,7 +8,7 @@ function Tech() {
     >
       <div className="flex flex-col px-10 py-10 gap-16 md:px-20">
         <div className="w-full flex justify-center">
-          <h2 className="font-bold text-5xl">Tech Stack</h2>
+          <h2 className="font-bold text-5xl">Toolkit</h2>
         </div>
         <div className="w-full flex flex-col items-center justify-center">
           <div className="w-full grid grid-cols-3 items-center gap-8 md:grid-cols-4 lg:grid-cols-10">

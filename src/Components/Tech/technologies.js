@@ -12,8 +12,8 @@ import mongo from "../../assets/mongo.svg";
 import express from "../../assets/express.svg";
 import wordpress from "../../assets/wordpress.svg";
 import jira from "../../assets/jira.svg";
-
-
+import postman from "../../assets/postman.svg";
+import materialui from "../../assets/materialui.svg"
 
 export const technologies = [
   {
@@ -71,5 +71,13 @@ export const technologies = [
   {
     name: "Jira",
     image: jira,
+  },
+  {
+    name: "Postman",
+    image: postman,
+  },
+  {
+    name: "MaterialUI",
+    image: materialui,
   },
 ];
