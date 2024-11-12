@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import "react-toastify/dist/ReactToastify.css";
 import { toast } from "react-toastify";
@@ -18,9 +18,11 @@ function Contact({ mode }) {
   async function handleSubmit(e) {
     e.preventDefault();
 
-    const serviceId = "service_dbs5cvj";
-    const templateId = "template_mv2035u";
-    const userId = "qRn3iEpbpvzwNq2gF";
+    const serviceId = import.meta.env.VITE_SERVICE_ID;
+    const templateId = import.meta.env.VITE_TEMPLATE_ID;
+    const userId = import.meta.env.VITE_USER_ID;
+
+    console.log(serviceId, templateId, userId);
 
     if (!formDetails.fullName || !formDetails.email || !formDetails.message) {
       toast.info("You need to fill in all the fields.");
@@ -49,7 +51,7 @@ function Contact({ mode }) {
       };
 
       const response = await fetch(
-        "https://api.emailjs.com/api/v1.0/email/send",
+        `${import.meta.env.VITE_EMAIL_URL}`,
         settings
       );
       if (response.ok) {
