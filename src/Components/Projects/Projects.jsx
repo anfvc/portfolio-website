@@ -67,13 +67,13 @@ function Projects({ mode }) {
                   >
                     <FiExternalLink />
                   </a>
-                  {/* <a
-                  className="flex items-center gap-8 text-blue-900 text-3xl p-1"
-                  href={project.github}
-                  target="_blank"
-                >
-                  <FiGithub />
-                </a> */}
+                  <a
+                    className="flex items-center gap-8 text-3xl p-1"
+                    href={project.github}
+                    target="_blank"
+                  >
+                    <FiGithub />
+                  </a>
                 </div>
               </div>
             </div>
