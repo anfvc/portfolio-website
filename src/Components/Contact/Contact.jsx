@@ -61,9 +61,7 @@ function Contact({ mode }) {
         toast.success("Thank you for your email!");
       } else {
         const error = await response.json();
-        toast.error(
-          error.message || "There was an error sending your email"
-        );
+        toast.error(error.message || "There was an error sending your email");
       }
     } catch (error) {
       toast.error("Please try again later");
@@ -105,6 +103,7 @@ function Contact({ mode }) {
                 <input
                   type="text"
                   name="fullName"
+                  placeholder="Your name goes here..."
                   id="fullName"
                   className={`border ${
                     mode ? "bg-[#151515] text-white" : "border-black"
@@ -118,6 +117,7 @@ function Contact({ mode }) {
                 <input
                   type="email"
                   name="email"
+                  placeholder="Your email goes here..."
                   id="email"
                   className={`border ${
                     mode ? "bg-[#151515] text-white" : "border-black"
@@ -129,11 +129,13 @@ function Contact({ mode }) {
                   Message
                 </label>
                 <textarea
+                  rows="5"
+                  placeholder="Your message goes here..."
                   name="message"
                   id="message"
                   className={`border ${
                     mode ? "bg-[#151515] text-white" : "border-black"
-                  } rounded-xl p-3`}
+                  } rounded-xl p-4`}
                   onChange={handleChange}
                   value={formDetails.message}
                 ></textarea>
