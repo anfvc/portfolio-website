@@ -31,11 +31,7 @@ function Hero({ mode }) {
               ></ReactTyped>
             </div>
             <p className="text-3xl text-center md:text-4xl md:text-left ">
-              I'm a tech enthusiast making a transition into the Web Development
-              industry. Aiming to become the best developer I can be, I have a
-              keen interest in bringing innovative ideas to life and crafting
-              impactful products and experiences for end-users, I'm always eager
-              to continue growing professionally and advance as a developer.
+            I'm a dedicated web developer with a full-stack foundation, focused on crafting innovative, user-centered digital experiences. With a strategic mindset from logistics, I prioritize scalable, high-quality solutions that drive engagement. Eager to grow technically and contribute to impactful development teams.
             </p>
             <div className="w-full flex justify-center gap-6 md:justify-normal">
               <a href="#contact">
