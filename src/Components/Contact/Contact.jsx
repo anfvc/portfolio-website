@@ -92,8 +92,8 @@ function Contact({ mode }) {
             </div>
             <div className="w-full">
               <form
-                className={`w-full flex flex-col gap-3  font-normal text-4xl rounded-xl border ${
-                  mode ? "border-white bg-black" : "border-black shadow-xl"
+                className={`w-full flex flex-col gap-3 font-normal text-4xl rounded-xl ${
+                  mode ? "border-white" : "border-black"
                 } p-16`}
                 onSubmit={handleSubmit}
               >
@@ -105,9 +105,9 @@ function Contact({ mode }) {
                   name="fullName"
                   placeholder="Your name goes here..."
                   id="fullName"
-                  className={`border ${
-                    mode ? "bg-[#151515] text-white" : "border-black"
-                  } rounded-xl p-3`}
+                  className={`border border-t-0 border-r-0 border-l-0 placeholder:text-3xl ${
+                    mode ? "bg-[#151515] text-white outline-white" : "border-black outline-black"
+                  } p-3`}
                   onChange={handleChange}
                   value={formDetails.fullName}
                 />
@@ -119,9 +119,9 @@ function Contact({ mode }) {
                   name="email"
                   placeholder="Your email goes here..."
                   id="email"
-                  className={`border ${
-                    mode ? "bg-[#151515] text-white" : "border-black"
-                  } rounded-xl p-3`}
+                  className={`border border-t-0 border-r-0 border-l-0 placeholder:text-3xl ${
+                    mode ? "bg-[#151515] text-white outline-white" : "border-black outline-black"
+                  } p-3`}
                   onChange={handleChange}
                   value={formDetails.email}
                 />
@@ -133,15 +133,15 @@ function Contact({ mode }) {
                   placeholder="Your message goes here..."
                   name="message"
                   id="message"
-                  className={`border ${
-                    mode ? "bg-[#151515] text-white" : "border-black"
-                  } rounded-xl p-4`}
+                  className={`border border-t-0 border-r-0 border-l-0 placeholder:text-3xl ${
+                    mode ? "bg-[#151515] text-white outline-white" : "border-black outline-black"
+                  } p-4`}
                   onChange={handleChange}
                   value={formDetails.message}
                 ></textarea>
                 <div className="w-full flex mt-4">
                   <button
-                    className={`w-full p-5 my-10 border rounded-xl ${
+                    className={`w-full p-5 my-10 border ${
                       mode
                         ? "bg-[#151515] text-white active:bg-white active:text-black"
                         : " border-white bg-black text-white active:bg-white active:text-black active:border-black"
