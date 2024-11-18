@@ -6,7 +6,7 @@ import manager from "../../assets/Managerimg.png";
 import bitez from "../../assets/bitezimg.png";
 import bloomora from "../../assets/bloomora.png";
 
-const projects = [
+export const projects = [
   {
     name: "Bitez Food App",
     description:
@@ -87,5 +87,3 @@ const projects = [
     github: "https://github.com/anfvc/Euro-Germany.git",
   },
 ];
-
-export default projects;

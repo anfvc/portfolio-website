@@ -1,6 +1,6 @@
 import { FiGithub } from "react-icons/fi";
 import { FiExternalLink } from "react-icons/fi";
-import projects from "./projects.js";
+import { projects } from "./projects.js";
 
 function Projects({ mode }) {
   return (
@@ -67,13 +67,15 @@ function Projects({ mode }) {
                   >
                     <FiExternalLink />
                   </a>
-                  <a
-                    className="flex items-center gap-8 text-3xl p-1"
-                    href={project.github}
-                    target="_blank"
-                  >
-                    <FiGithub />
-                  </a>
+                  {project.github !== "" && (
+                    <a
+                      className="flex items-center gap-8 text-3xl p-1"
+                      href={project.github}
+                      target="_blank"
+                    >
+                      <FiGithub />
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
