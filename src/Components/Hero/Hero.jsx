@@ -1,6 +1,7 @@
 import { ReactTyped } from "react-typed";
 import profile3 from "../../assets/profile3.png";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import cv from "../../assets/CVAndresU.pdf";
 
 function Hero({ mode }) {
   return (
@@ -31,7 +32,11 @@ function Hero({ mode }) {
               ></ReactTyped>
             </div>
             <p className="text-3xl text-center md:text-4xl md:text-left ">
-            I'm a dedicated web developer with a full-stack foundation, focused on crafting innovative, user-centered digital experiences. With a strategic mindset from logistics, I prioritize scalable, high-quality solutions that drive engagement. Eager to grow technically and contribute to impactful development teams.
+              I'm a dedicated web developer with a full-stack foundation,
+              focused on crafting innovative, user-centered digital experiences.
+              With a strategic mindset from logistics, I prioritize scalable,
+              high-quality solutions that drive engagement. Eager to grow
+              technically and contribute to impactful development teams.
             </p>
             <div className="w-full flex justify-center gap-6 md:justify-normal">
               <a href="#contact">
@@ -44,12 +49,12 @@ function Hero({ mode }) {
                   Reach Out
                 </button>
               </a>
-              <a href="#stack">
+              <a href={cv} target="_blank">
                 <button
                   className="inline-flex items-center rounded-full px-4 py-2 md:px-8 md:py-5 text-xl font-semibold text-black bg-white border-black hover:text-white border-2
               hover:bg-black hover:border-white transition ease-in-out delay-90 hover:-translate-y-1 duration-500 focus:bg-black focus:text-white"
                 >
-                  Tech Stack
+                  Download Resume
                 </button>
               </a>
             </div>
