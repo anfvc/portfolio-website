@@ -1,7 +1,8 @@
 import { ReactTyped } from "react-typed";
-import profile3 from "../../assets/profile3.png";
+// import profile3 from "../../assets/profile3.png";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import cv from "../../assets/CVAndresU.pdf";
+import profile3comp from "../../assets/profile3comp.webp"
 
 function Hero({ mode }) {
   return (
@@ -87,7 +88,7 @@ function Hero({ mode }) {
         <div className="w-full h-full flex justify-center items-center">
           <img
             className="w-full object-cover"
-            src={profile3}
+            src={profile3comp}
             alt="hero-picture"
             loading="lazy"
           />

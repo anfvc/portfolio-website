@@ -1,4 +1,3 @@
-import about2 from "../../assets/about2.jpg";
 import about3 from "../../assets/profilepic.jpg";
 
 
