@@ -1,10 +1,21 @@
 import euro from "../../assets/euroimg.png";
-import react from "../../assets/reactshopimg.png";
 import spotify from "../../assets/spotifycloneimg.png";
 import calculator from "../../assets/Calculatorimg.png";
 import manager from "../../assets/Managerimg.png";
 import bitez from "../../assets/bitezimg.png";
 import bloomora from "../../assets/bloomora.png";
+import react from "../../assets/react2.svg";
+import tailwind from "../../assets/tailwindcss2.svg";
+import express from "../../assets/express.svg";
+import mongo from "../../assets/mongo.svg";
+import node from "../../assets/nodejs2.svg";
+import stripe from "../../assets/stripe.svg";
+import css from "../../assets/css2.svg";
+import js from "../../assets/js2.svg";
+import html from "../../assets/html2.svg";
+import sass from "../../assets/sass2.svg";
+import materialui from "../../assets/materialui.svg";
+import cloudinary from "../../assets/cloudinary.svg";
 
 export const projects = [
   {
@@ -13,7 +24,7 @@ export const projects = [
       "Bitez is a fullstack app. Its purpose is to serve as a restaurant app where you can select from a different offering of products, place orders, have a complete overview of all your orders, track them and pay for them using Stripe's hosted page. It also counts with an admin panel which is intended to serve the app's content and is also used for updating order's statuses.",
     link: "https://bitez-food-app.onrender.com",
     image: bitez,
-    techUsed: ["Express", "MongoDB", "Node", "React", "TailwindCSS", "Stripe"],
+    techUsed: [express, mongo, node, react, tailwind, stripe],
     github: "https://github.com/anfvc/bitez-food-app.git",
   },
   {
@@ -23,14 +34,14 @@ export const projects = [
     link: "https://final-project-jran.onrender.com",
     image: bloomora,
     techUsed: [
-      "Express",
-      "MongoDB",
-      "Node",
-      "React",
-      "CSS",
-      "MaterialUI",
-      "Stripe",
-      "Cloudinary",
+      express,
+      mongo,
+      node,
+      react,
+      css,
+      materialui,
+      stripe,
+      cloudinary,
     ],
     github: "https://github.com/anfvc/bloomora-flower-shop.git",
   },
@@ -40,14 +51,7 @@ export const projects = [
       "Contact Manager is a full-stack application. Intended to show different functionalities such as: add, edit delete contacts from a user's perspective.",
     link: "https://contact-manager-f-779t.onrender.com",
     image: manager,
-    techUsed: [
-      "Express",
-      "MongoDB",
-      "Node",
-      "React",
-      "TailwindCSS",
-      "MaterialUI",
-    ],
+    techUsed: [express, mongo, node, react, tailwind, materialui],
     github: "https://github.com/anfvc/address-book.git",
   },
   // {
@@ -65,7 +69,7 @@ export const projects = [
       "The idea of this project was to create a simple calculator using Vanilla JavaScript while using SCSS to style it. ",
     link: "https://simple-calculator-vpqz.onrender.com",
     image: calculator,
-    techUsed: ["JavaScript", "HTML", "SCSS"],
+    techUsed: [js, html, sass],
     github: "https://github.com/anfvc/simple-calculator.git",
   },
   {
@@ -74,7 +78,7 @@ export const projects = [
       "This Website was built using HTML, CSS. I intended to make a copy based on the desktop version of Spotify. It also responds to different kinds of device screens.",
     link: "https://spotify-clone-hcex.onrender.com/",
     image: spotify,
-    techUsed: ["HTML", "CSS"],
+    techUsed: [html, css],
     github: "https://github.com/anfvc/spotify-clone.git",
   },
   {
@@ -83,7 +87,7 @@ export const projects = [
       "This is a simple website I created using HTML and CSS. Working on this project I was able to better understand the use of Flexbox, Positioning and clean website layouts.",
     link: "https://euro-germany.onrender.com/",
     image: euro,
-    techUsed: ["HTML", "CSS"],
+    techUsed: [html, css],
     github: "https://github.com/anfvc/Euro-Germany.git",
   },
 ];

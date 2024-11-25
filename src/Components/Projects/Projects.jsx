@@ -17,7 +17,7 @@ function Projects({ mode }) {
         <div className="w-full flex flex-col justify-center items-center gap-10">
           {projects.map((project, i) => (
             <div
-              className={`w-full flex h-fit flex-col  md:flex-row-reverse md:items-center gap-20 border py-8 px-8 border-y rounded-3xl ${
+              className={`w-full flex h-full flex-col  md:flex-row-reverse md:items-center gap-20 border py-8 px-8 border-y rounded-3xl ${
                 mode
                   ? "first:border-t border-[#f5f5f5] "
                   : "first:border-t border-[#121212] shadow-lg"
@@ -31,7 +31,7 @@ function Projects({ mode }) {
                 <img
                   src={project.image}
                   alt={"Image of" + " " + project.name}
-                  className="w-full rounded-3xl grayscale brightness-80 hover:grayscale-0 hover:duration-700 hover:ease-in-out"
+                  className="w-full object-cover rounded-3xl grayscale brightness-80 hover:grayscale-0 hover:duration-700 hover:ease-in-out"
                 />
               </div>
               <div className="w-full flex flex-col gap-8">
@@ -52,7 +52,8 @@ function Projects({ mode }) {
                       data-aos-easing="ease-in-cubic
                     "
                     >
-                      <p className="py-1 px-2">{language}</p>
+                      {/* <p className="py-1 px-2">{language}</p> */}
+                      <img src={language} alt={language} className="w-20 p-2 grayscale brightness-80 hover:grayscale-0 hover:duration-700 hover:ease-in-out" />
                     </div>
                   ))}
                 </div>
@@ -61,19 +62,23 @@ function Projects({ mode }) {
                   data-aos="fade-down"
                 >
                   <a
-                    className="flex items-center gap-8 text-4xl p-1"
+                    className={`flex items-center gap-2 text-2xl p-3 border ${
+                      mode ? "hover:bg-[#f5f5f5] hover:text-[#151515] border-[#f5f5f5]" : "hover:bg-[#151515] hover:text-[#f5f5f5] border-[#151515]"
+                    } rounded-lg`}
                     href={project.link}
                     target="_blank"
                   >
-                    <FiExternalLink />
+                    <FiExternalLink /> Demo
                   </a>
                   {project.github !== "" && (
                     <a
-                      className="flex items-center gap-8 text-3xl p-1"
+                      className={`flex items-center gap-2 text-2xl p-3 border ${
+                        mode ? "hover:bg-[#f5f5f5] hover:text-[#151515] border-[#f5f5f5]" : "hover:bg-[#151515] hover:text-[#f5f5f5] border-[#151515]"
+                      } rounded-lg `}
                       href={project.github}
                       target="_blank"
                     >
-                      <FiGithub />
+                      <FiGithub /> Repo
                     </a>
                   )}
                 </div>
