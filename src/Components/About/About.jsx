@@ -1,4 +1,4 @@
-import about3 from "../../assets/profilepic.jpg";
+import about4 from "../../assets/profilepiccomp.webp"
 
 
 function About({ mode }) {
@@ -14,7 +14,7 @@ function About({ mode }) {
         <div className="w-full flex flex-col items-center gap-16 lg:flex-row lg:justiy-center lg:gap-12">
           <div className="w-full h-full flex justify-center" data-aos="zoom-out-right">
             <img
-              src={about3}
+              src={about4}
               className="w-5/5 md:w-8/8 lg:w-full rounded-2xl object-cover"
               alt="about-picture"
               loading="lazy"

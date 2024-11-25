@@ -1,5 +1,4 @@
 import { ReactTyped } from "react-typed";
-// import profile3 from "../../assets/profile3.png";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import cv from "../../assets/CVAndresU.pdf";
 import profile3comp from "../../assets/profile3comp.webp"
