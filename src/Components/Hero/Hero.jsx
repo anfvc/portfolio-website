@@ -89,7 +89,6 @@ function Hero({ mode }) {
             className="w-full object-cover"
             src={profile3comp}
             alt="hero-picture"
-            loading="lazy"
           />
         </div>
       </div>
