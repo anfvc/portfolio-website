@@ -6,7 +6,7 @@ function Tech() {
       id="stack"
       className="w-full flex justify-center py-24 scroll-m-20 "
     >
-      <div className="flex flex-col px-10 py-10 gap-16 md:px-20">
+      <div className="flex flex-col px-10 py-10 gap-16 md:px-20 max-w-screen-xl mx-auto">
         <div className="w-full flex justify-center">
           <h2 className="font-bold text-5xl">Toolkit</h2>
         </div>
