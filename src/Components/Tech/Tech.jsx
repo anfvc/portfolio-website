@@ -11,7 +11,7 @@ function Tech() {
           <h2 className="font-bold text-5xl">Toolkit</h2>
         </div>
         <div className="w-full flex flex-col items-center justify-center">
-          <div className="w-full grid grid-cols-3 items-center gap-8 md:grid-cols-4 lg:grid-cols-10">
+          <div className="w-full grid grid-cols-4 items-center gap-8 md:grid-cols-4 lg:grid-cols-10">
             {technologies.map((tech, i) => {
               return (
                 <div
@@ -23,7 +23,7 @@ function Tech() {
                     alt={tech.name}
                     title={tech.name}
                     loading="lazy"
-                    className="grayscale brightness-80 hover:grayscale-0 hover:duration-700 hover:ease-in-out"
+                    className="w-32 sm:w-full grayscale brightness-80 hover:grayscale-0 hover:duration-700 hover:ease-in-out"
                   />
                 </div>
               );
