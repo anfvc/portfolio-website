@@ -92,9 +92,9 @@ function Contact({ mode }) {
             </div>
             <div className="w-full">
               <form
-                className={`w-full flex flex-col gap-3 font-normal text-4xl ${
+                className={`w-full flex flex-col gap-6 font-normal text-4xl ${
                   mode ? "border-white" : "border-black"
-                } p-16`}
+                }`}
                 onSubmit={handleSubmit}
               >
                 <label htmlFor="fullName" className="font-bold py-4">
