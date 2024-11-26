@@ -21,7 +21,7 @@ function Projects({ mode }) {
                 mode
                   ? "first:border-t border-[#f5f5f5] "
                   : "first:border-t border-[#121212] shadow-lg"
-              } py-10 text-justify`}
+              } py-10`}
               key={i}
               data-aos="zoom-in"
               data-aos-offset="300"
@@ -31,10 +31,10 @@ function Projects({ mode }) {
                 <img
                   src={project.image}
                   alt={"Image of" + " " + project.name}
-                  className="w-full object-cover rounded-3xl grayscale brightness-80 hover:grayscale-0 hover:duration-700 hover:ease-in-out"
+                  className="w-full object-cover rounded-3xl grayscale brightness-80 hover:grayscale-0 hover:duration-700 hover:ease-in-out p-3"
                 />
               </div>
-              <div className="w-full flex flex-col gap-8">
+              <div className="w-full flex flex-col gap-9 p-4">
                 <h3 className="font-semibold text-3xl">{project.name}</h3>
                 <p>{project.description}</p>
 
