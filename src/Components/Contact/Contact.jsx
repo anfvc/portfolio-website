@@ -22,7 +22,7 @@ function Contact({ mode }) {
     const templateId = import.meta.env.VITE_TEMPLATE_ID;
     const userId = import.meta.env.VITE_USER_ID;
 
-    console.log(serviceId, templateId, userId);
+    // console.log(serviceId, templateId, userId);
 
     if (!formDetails.fullName || !formDetails.email || !formDetails.message) {
       toast.info("You need to fill in all the fields.");
@@ -56,7 +56,7 @@ function Contact({ mode }) {
       );
       if (response.ok) {
         const data = await response.text();
-        console.log(data);
+        // console.log(data);
         setFormDetails(formInitialDetails);
         toast.success("Thank you for your email!");
       } else {
