@@ -41,7 +41,7 @@ function Hero({ mode }) {
             <div className="w-full flex justify-center gap-6 md:justify-normal">
               <a href="#contact">
                 <button
-                  className={`inline-flex items-center rounded-full px-4 py-2 md:px-8 md:py-5 text-xl font-semibold text-white ${
+                  className={`inline-flex items-center rounded-full p-6 md:p-8 text-xl font-semibold text-white ${
                     mode ? "border-white" : ""
                   } bg-black border-black  hover:text-black border-2
               hover:bg-white transition ease-in-out delay-90 hover:-translate-y-1 duration-500 focus:bg-white focus:text-black`}
@@ -51,7 +51,7 @@ function Hero({ mode }) {
               </a>
               <a href={cv} target="_blank">
                 <button
-                  className="inline-flex items-center rounded-full px-4 py-2 md:px-8 md:py-5 text-xl font-semibold text-black bg-white border-black hover:text-white border-2
+                  className="inline-flex items-center rounded-full p-6 md:p-8 text-xl font-semibold text-black bg-white border-black hover:text-white border-2
               hover:bg-black hover:border-white transition ease-in-out delay-90 hover:-translate-y-1 duration-500 focus:bg-black focus:text-white"
                 >
                   Download Resume
