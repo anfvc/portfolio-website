@@ -44,7 +44,7 @@ function Projects({ mode }) {
                       className={`flex px-3 py-1 gap-2 justify-center items-center border ${
                         mode
                           ? "hover:bg-[#f5f5f5] hover:text-[#151515] border-[#f5f5f5]"
-                          : "hover:bg-[#151515] hover:text-[#f5f5f5] border-[#ea6969]"
+                          : "hover:bg-[#151515] hover:text-[#f5f5f5] border-[#151515]"
                       } transition-all ease-linear rounded-md`}
                       key={i}
                       //   data-aos="fade-left"
