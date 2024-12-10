@@ -1,5 +1,5 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import Andres from "../../assets/Andres.png";
+import Andres from "../../assets/Andres-compress.webp";
 
 function Footer({ mode }) {
   return (
