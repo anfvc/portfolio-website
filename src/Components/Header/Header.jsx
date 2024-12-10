@@ -2,7 +2,7 @@ import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import { Switch } from "@mui/material";
-import Andres from "../../assets/Andres.png";
+import Andres from "../../assets/Andres-compress.webp";
 
 function Header({ mode, handleChange }) {
   const [hamburger, setHamburger] = useState(false);
