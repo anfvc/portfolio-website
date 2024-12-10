@@ -8,7 +8,7 @@ function Projects({ mode }) {
       id="projects"
       className={`w-full ${
         mode ? "bg-[#151515]" : " bg-[#f5f5f5]"
-      } py-36 overflow-x-hidden scroll-mt-60`}
+      } py-36 overflow-x-hidden overflow-y-hidden scroll-mt-60`}
     >
       <div className="w-full flex flex-col gap-16 px-10 md:px-20 mx-auto max-w-screen-xl">
         <div className="w-full flex justify-center mx-auto">
@@ -23,9 +23,9 @@ function Projects({ mode }) {
                   : "first:border-t border-[#121212] shadow-lg"
               } py-10`}
               key={i}
-              data-aos="zoom-in"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
             >
               <div className="w-full">
                 <img
@@ -41,19 +41,24 @@ function Projects({ mode }) {
                 <div className="flex flex-wrap items-center gap-3.5 font-semibold justify-start md:justify-start">
                   {project.techUsed.map((language, i) => (
                     <div
-                      className={`border ${
+                      className={`flex px-3 py-1 gap-2 justify-center items-center border ${
                         mode
                           ? "hover:bg-[#f5f5f5] hover:text-[#151515] border-[#f5f5f5]"
-                          : "hover:bg-[#151515] hover:text-[#f5f5f5] border-[#151515]"
+                          : "hover:bg-[#151515] hover:text-[#f5f5f5] border-[#ea6969]"
                       } transition-all ease-linear rounded-md`}
                       key={i}
-                      data-aos="fade-left"
-                      data-aos-offset="300"
-                      data-aos-easing="ease-in-cubic
-                    "
+                      //   data-aos="fade-left"
+                      //   data-aos-offset="300"
+                      //   data-aos-easing="ease-in-cubic
+                      // "
                     >
-                      {/* <p className="py-1 px-2">{language}</p> */}
-                      <img src={language} alt={language} className="w-20 p-2 grayscale brightness-80 hover:grayscale-0 hover:duration-700 hover:ease-in-out" />
+                      <img
+                        src={language.image}
+                        alt={`Icon of ${language.name}`}
+                        className="w-12 grayscale brightness-80 hover:grayscale-0 hover:duration-700 hover:ease-in-out"
+                        title={language.name}
+                      />
+                      <p className="">{language.name}</p>
                     </div>
                   ))}
                 </div>
@@ -63,7 +68,9 @@ function Projects({ mode }) {
                 >
                   <a
                     className={`flex items-center gap-2 text-2xl p-3 border ${
-                      mode ? "hover:bg-[#f5f5f5] hover:text-[#151515] border-[#f5f5f5]" : "hover:bg-[#151515] hover:text-[#f5f5f5] border-[#151515]"
+                      mode
+                        ? "hover:bg-[#f5f5f5] hover:text-[#151515] border-[#f5f5f5]"
+                        : "hover:bg-[#151515] hover:text-[#f5f5f5] border-[#151515]"
                     } rounded-lg`}
                     href={project.link}
                     target="_blank"
@@ -73,7 +80,9 @@ function Projects({ mode }) {
                   {project.github !== "" && (
                     <a
                       className={`flex items-center gap-2 text-2xl p-3 border ${
-                        mode ? "hover:bg-[#f5f5f5] hover:text-[#151515] border-[#f5f5f5]" : "hover:bg-[#151515] hover:text-[#f5f5f5] border-[#151515]"
+                        mode
+                          ? "hover:bg-[#f5f5f5] hover:text-[#151515] border-[#f5f5f5]"
+                          : "hover:bg-[#151515] hover:text-[#f5f5f5] border-[#151515]"
                       } rounded-lg `}
                       href={project.github}
                       target="_blank"
