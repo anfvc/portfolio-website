@@ -46,7 +46,7 @@ export const projects = [
       { name: "NodeJS", image: node },
       { name: "React", image: react },
       { name: "CSS", image: css },
-      { name: "MaterialUI", image: css },
+      { name: "MaterialUI", image: materialui },
       { name: "Stripe", image: stripe },
       { name: "Cloudinary", image: cloudinary },
     ],
