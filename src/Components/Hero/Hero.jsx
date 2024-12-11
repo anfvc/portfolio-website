@@ -67,6 +67,7 @@ function Hero({ mode }) {
                 } transition-all ease-linear`}
                 href="https://github.com/anfvc"
                 target="_blank"
+                aria-label="Please click here to go to my GitHub profile"
               >
                 <FaGithub />
               </a>
@@ -78,6 +79,7 @@ function Hero({ mode }) {
                 } transition-all ease-linear`}
                 href="https://linkedin.com/in/avillay"
                 target="_blank"
+                aria-label="Please click here to go to my LinkedIn profile"
               >
                 <FaLinkedin />
               </a>
