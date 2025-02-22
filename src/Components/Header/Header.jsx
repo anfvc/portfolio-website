@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
-import { Switch } from "@mui/material";
+import DarkModeToggle from "./DarkModeToggle";
 import Andres from "../../assets/Andres-compress.webp";
 
 function Header({ mode, handleChange }) {
@@ -18,7 +18,7 @@ function Header({ mode, handleChange }) {
       }`}
     >
       <nav className="flex justify-between items-center w-full mx-auto max-w-screen-2xl p-8 border-solid">
-        <div className="flex items-center gap-4 text-3xl font-bold">
+        <div className="flex items-center gap-5 text-3xl font-bold">
           <div>
             <a href="#">
               <img
@@ -29,13 +29,7 @@ function Header({ mode, handleChange }) {
             </a>
           </div>
           <h2>Andrés Villay</h2>
-          <Switch
-            checked={mode}
-            onChange={handleChange}
-            inputProps={{ "aria-label": "controlled" }}
-            size="small"
-            color="default"
-          />
+          <DarkModeToggle mode={mode} handleChange={handleChange} />
         </div>
         <ul className="items-center hidden gap-8 text-3xl font-semibold md:flex">
           <a className="relative inline-block" href="#" target="_self">
@@ -56,7 +50,11 @@ function Header({ mode, handleChange }) {
               About
             </li>
           </a>
-          <a className="relative inline-block" href="#experience" target="_self">
+          <a
+            className="relative inline-block"
+            href="#experience"
+            target="_self"
+          >
             <li
               className={`py-1 border-transparent hover:border-solid ${
                 mode ? "hover:border-[#f5f5f5]" : "hover:border-[#151515]"
