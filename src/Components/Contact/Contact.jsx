@@ -106,7 +106,7 @@ function Contact({ mode }) {
                   placeholder="Your name goes here..."
                   id="fullName"
                   className={`border border-t-0 border-r-0 border-l-0 placeholder:text-3xl rounded-none ${
-                    mode ? "bg-transparent text-white outline-white" : "border-black outline-black"
+                    mode ? "bg-transparent text-white outline-white" : "bg-white border-black outline-black"
                   } p-3`}
                   onChange={handleChange}
                   value={formDetails.fullName}
@@ -120,7 +120,7 @@ function Contact({ mode }) {
                   placeholder="Your email goes here..."
                   id="email"
                   className={`border border-t-0 border-r-0 border-l-0 placeholder:text-3xl rounded-none ${
-                    mode ? "bg-transparent text-white outline-white" : "border-black outline-black"
+                    mode ? "bg-transparent text-white outline-white" : "bg-white border-black outline-black"
                   } p-3`}
                   onChange={handleChange}
                   value={formDetails.email}
@@ -134,7 +134,7 @@ function Contact({ mode }) {
                   name="message"
                   id="message"
                   className={`border border-t-0 border-r-0 border-l-0 placeholder:text-3xl rounded-none ${
-                    mode ? "bg-transparent text-white outline-white" : "border-black outline-black"
+                    mode ? "bg-transparent text-white outline-white" : "bg-white border-black outline-black"
                   } p-4`}
                   onChange={handleChange}
                   value={formDetails.message}
