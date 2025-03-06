@@ -14,6 +14,7 @@ import wordpress from "../../assets/wordpress.svg";
 import jira from "../../assets/jira.svg";
 import postman from "../../assets/postman.svg";
 import materialui from "../../assets/materialui.svg"
+import ts from "../../assets/ts.svg"
 
 export const technologies = [
   {
@@ -31,6 +32,10 @@ export const technologies = [
   {
     name: "JavaScript",
     image: js2,
+  },
+  {
+    name: "TypeScript",
+    image: ts,
   },
   {
     name: "React",
