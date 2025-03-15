@@ -1,6 +1,6 @@
 import { ReactTyped } from "react-typed";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import cv from "../../assets/AFVC Resume.pdf";
+import cv from "../../assets/CV WD AFVC.pdf"
 import profile3comp from "../../assets/profile3comp.webp"
 
 function Hero({ mode }) {

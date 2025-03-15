@@ -13,10 +13,30 @@ import express from "../../assets/express.svg";
 import wordpress from "../../assets/wordpress.svg";
 import jira from "../../assets/jira.svg";
 import postman from "../../assets/postman.svg";
-import materialui from "../../assets/materialui.svg"
 import ts from "../../assets/ts.svg"
+import figma from "../../assets/figma.svg"
 
 export const technologies = [
+  {
+    name: "JavaScript",
+    image: js2,
+  },
+  {
+    name: "TypeScript",
+    image: ts,
+  },
+  {
+    name: "Node.JS",
+    image: nodejs2,
+  },
+  {
+    name: "React",
+    image: react2,
+  },
+  {
+    name: "TailwindCSS",
+    image: tailwindcss2,
+  },
   {
     name: "HTML",
     image: html2,
@@ -28,26 +48,6 @@ export const technologies = [
   {
     name: "SASS",
     image: sass2,
-  },
-  {
-    name: "JavaScript",
-    image: js2,
-  },
-  {
-    name: "TypeScript",
-    image: ts,
-  },
-  {
-    name: "React",
-    image: react2,
-  },
-  {
-    name: "TailwindCSS",
-    image: tailwindcss2,
-  },
-  {
-    name: "Nodejs",
-    image: nodejs2,
   },
   {
     name: "Git",
@@ -74,15 +74,15 @@ export const technologies = [
     image: wordpress,
   },
   {
+    name: "Figma",
+    image: figma
+  },
+  {
     name: "Jira",
     image: jira,
   },
   {
     name: "Postman",
     image: postman,
-  },
-  {
-    name: "MaterialUI",
-    image: materialui,
   },
 ];
