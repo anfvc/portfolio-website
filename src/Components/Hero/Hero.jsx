@@ -1,6 +1,5 @@
 import { ReactTyped } from "react-typed";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import cv from "../../assets/CV WD AFVC.pdf";
 import profile3comp from "../../assets/profile3comp.webp";
 
 function Hero({ mode }) {
@@ -49,14 +48,14 @@ function Hero({ mode }) {
                   Reach Out
                 </button>
               </a>
-              <a href={cv} target="_blank">
+              {/* <a href={cv} target="_blank">
                 <button
                   className="inline-flex items-center rounded-full py-4 px-6 text-xl font-semibold text-black bg-white border-black hover:text-white border-2
               hover:bg-black hover:border-white transition ease-in-out delay-90 hover:-translate-y-1 duration-500 focus:bg-black focus:text-white"
                 >
                   Resume
                 </button>
-              </a>
+              </a> */}
             </div>
             <div className="w-full flex items-center justify-center pt-16 gap-8 md:justify-start lg:justify-start">
               <a
